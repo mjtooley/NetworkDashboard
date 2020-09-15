@@ -5,6 +5,6 @@
 - Target audience
 - Structure of document
 
-Here is some text. [^fn]
+Here is some text. [^fn1]
 
-[^fn]: Footnote text
+[^fn1]: Footnote text
