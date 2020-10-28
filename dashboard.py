@@ -1,7 +1,7 @@
 from __future__ import division
 import calendar
 import time
-import datetime
+from datetime import datetime, timedelta
 from ripe.atlas.cousteau import AtlasResultsRequest, ProbeRequest, Probe
 import csv
 import os.path
@@ -24,8 +24,8 @@ asn[11427] = 'Charter'
 asn[12271] = 'Charter'
 asn[20001] = 'Charter'
 asn[19108] = 'AlticeUSA'
-asn[7018] = 'ATT'
-asn[20057] = 'ATT'
+asn[7018] = 'ATT Internet4'
+asn[20057] = 'ATT W/L'
 asn[701] = 'Verizon'
 asn[702] = 'Verizon'
 asn[2828] = 'Verizon'
@@ -39,6 +39,24 @@ asn[11492] = 'CableOne'
 asn[21928] = 'T-Mobile'
 asn[19129] = 'Vistabeam-net'
 asn[394883] = 'Vistabeam'
+asn[5607] = 'sky-uk'
+asn[2856] = 'BT'
+asn[12576] = 'Orange-UK'
+asn[13285] = 'TalkTalk'
+asn[3352] = 'Telefonica-Spain'
+asn[12479] = 'Orange-Spain'
+asn[12430] = 'Vodafone-Spain'
+asn[1136] = 'KPN'
+asn[33915] = 'vodafone-nl'
+asn[6830] = 'LibertyGlobal'
+asn[2516] = ' KDDI-JP'
+asn[17676] = 'Softbank'
+asn[4713] =  'NTT'
+asn[9605] = 'Docomoco'
+asn[55836] = 'Reliant-IN'
+asn[45609] = 'Bharti'
+asn[38266] = 'Vodafone'
+asn[45271] = ' Idea Cellular'
 
 def getNetworkName(net_number):
     name = asn[net_number]
@@ -171,9 +189,9 @@ def plotDfs(dfs):
         fig.add_trace(go.Scatter(x=df.index, y=df['Rtt'], name=getNetworkName(asn)))
 
     fig.update_layout(
-        title="Avg RTT",
+        title="Average Round Trip Time from Atlas Probes to F-Root-Server",
         xaxis_title = "Time",
-        yaxis_title = "RTT, mSec",
+        yaxis_title = "Avg. RTT, mSec",
         legend_title = 'ASN'
     )
     fig.show()
@@ -209,43 +227,39 @@ def doAsn(asn):
     if os.path.isfile(results_file):
         os.remove(results_file)
 
+    start = datetime(2020,2,1,0)
     with open(results_file, 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         writer.writeheader()
         id = 1004 # 1001 = K (anycast), 1004 = F (ISC anycast), 1013 = E-root server, 1012488 = Google
         probe_list = getProbeList(asn, id)
-        for month in range(2,5):
-            for day in range(1,30):
-                for hour in range(0,24):
-                    try:
-                        start = datetime(2020, month, day, hour,0)
-                        stop = datetime(2020, month, day, hour, 59)
+        for count in range(0,120*24):
+            stop = start + timedelta(hours=1)
+            print("ASN:" + str(asn) + " " + start.strftime('%m/%d/%Y,%H:%M:%S'))
+            try:
+                rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var = getASNResults(asn, id, start, stop,probe_list)
+                # Prep row for CSV File
+                row_dict = {}
+                row_dict['ASN'] = asn
+                row_dict['MSM_ID'] = id
+                row_dict['Date'] = start.strftime('%m/%d/%Y,%H:%M:%S')
+                row_dict['Timestamp'] = totimestamp(start)
+                row_dict['RTT'] = rtt_average
+                row_dict['Mean'] = rtt_mean
+                row_dict['Median'] = rtt_median
+                row_dict['Std'] = rtt_std
+                row_dict['Var'] = rtt_var
+                writer.writerow(row_dict)
+                asn_rtts.append(rtt_average)
+                asn_times.append(start.strftime("%Y-%m-%d %H:%M:%S.%f"))
+                # print row_dict
+            except:
+                e = sys.exc_info()
+                print ("Error", str(e))
 
-                        print("ASN:" + str(asn) + " " + str(month) + "/" + str(day) + ':' + str(hour))
-                        #doDay(asn, id, start, stop, results_file,)
-                        try:
-                            rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var = getASNResults(asn, id, start, stop,probe_list)
-                            # Prep row for CSV File
-                            row_dict = {}
-                            row_dict['ASN'] = asn
-                            row_dict['MSM_ID'] = id
-                            row_dict['Date'] = start.strftime('%m/%d/%Y,%H:%M:%S')
-                            row_dict['Timestamp'] = totimestamp(start)
-                            row_dict['RTT'] = rtt_average
-                            row_dict['Mean'] = rtt_mean
-                            row_dict['Median'] = rtt_median
-                            row_dict['Std'] = rtt_std
-                            row_dict['Var'] = rtt_var
-                            writer.writerow(row_dict)
-                            asn_rtts.append(rtt_average)
-                            asn_times.append(start.strftime("%Y-%m-%d %H:%M:%S.%f"))
-                            # print row_dict
-                        except:
-                            e = sys.exc_info()
-                            print ("Error", str(e))
-                    except:
-                        e = sys.exc_info()
-                        print ("Error", str(e))
+            start = stop # bump the start by an hour
+
+
     # Convert lists to series
     rtts = pd.Series(asn_rtts).astype(int)
     times = pd.to_datetime(pd.Series(asn_times).astype(str), errors='coerce')
@@ -263,7 +277,9 @@ def doAsn(asn):
     print('Finished:', asn)
 
 #ASNs = [7922, 22773, 20115, 6128, 7018, 20057, 22394, 3549, 209, 21928]
-ASNs = [20115, 6128, 7018, 20057, 3549, 209, 21928,701]
+#ASNs = [7922,22773,20115, 6128, 7018, 20057, 3549, 209, 21928,701]
+ASNs = [5607, 2856, 12576, 13285, 3352, 12479, 12430, 1136, 33915, 6830, 2516, 17676,
+        4713, 9605, 55836, 45609, 38266, 45271]
 
 #ASNs = [7922, 22773]
 def main(argv):
