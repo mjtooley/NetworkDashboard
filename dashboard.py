@@ -227,13 +227,13 @@ def doAsn(asn):
     if os.path.isfile(results_file):
         os.remove(results_file)
 
-    start = datetime(2020,2,1,0)
+    start = datetime(2019,1,1,0)
     with open(results_file, 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         writer.writeheader()
         id = 1004 # 1001 = K (anycast), 1004 = F (ISC anycast), 1013 = E-root server, 1012488 = Google
         probe_list = getProbeList(asn, id)
-        for count in range(0,120*24):
+        for count in range(0,(365+180)*24): #do 1.5 years
             stop = start + timedelta(hours=1)
             print("ASN:" + str(asn) + " " + start.strftime('%m/%d/%Y,%H:%M:%S'))
             try:
@@ -273,20 +273,23 @@ def doAsn(asn):
     # plotRtts(df2)
     fn2 = results_file = 'df_' + str(asn) +'.csv'
     df.to_csv(fn2,index=True)
-    return(df2) # return the data frame
     print('Finished:', asn)
+    return(df2) # return the data frame
 
 #ASNs = [7922, 22773, 20115, 6128, 7018, 20057, 22394, 3549, 209, 21928]
-#ASNs = [7922,22773,20115, 6128, 7018, 20057, 3549, 209, 21928,701]
-ASNs = [5607, 2856, 12576, 13285, 3352, 12479, 12430, 1136, 33915, 6830, 2516, 17676,
+NA_ASNs = [7922,22773,20115, 6128, 7018, 20057, 3549, 209, 21928,701]
+OTHER_ASNs = [5607, 2856, 12576, 13285, 3352, 12479, 12430, 1136, 33915, 6830, 2516, 17676,
         4713, 9605, 55836, 45609, 38266, 45271]
 
 #ASNs = [7922, 22773]
 def main(argv):
     print('Network Dashboard Starting Up...')
-    for asn in ASNs:
+    for asn in NA_ASNs:
         getProbeCount(asn)
-        #doAsn(asn)
+        
+    for asn in OTHER_ASNs:
+        getProbeCount(asn)
+
 
 #    df = doAsn(7922)
 
@@ -298,7 +301,17 @@ def main(argv):
 
     p = []
     threadId = 0
-    for i in ASNs:
+    for i in NA_ASNs:
+        p.append(threading.Thread(target=doAsn, args=(i,)))
+        p[threadId].start()
+        threadId = threadId + 1
+
+    for i in range(threadId-1):
+        p[i].join()
+        
+    p = []
+    threadId = 0
+    for i in OTHER_ASNs:
         p.append(threading.Thread(target=doAsn, args=(i,)))
         p[threadId].start()
         threadId = threadId + 1
