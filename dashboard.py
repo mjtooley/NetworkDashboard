@@ -14,9 +14,9 @@ from scapy.all import *
 asn = dict()
 asn[7922] = 'Comcast'
 asn[22773] = 'Cox'
-asn[20115] = 'Charter'
 asn[6128] = 'AlticeUSA'
 asn[30036] = 'Mediacom'
+asn[20115] = 'Charter'
 asn[10796] = 'Charter'
 asn[11351] = 'Charter'
 asn[11426] = 'Charter'
@@ -139,11 +139,15 @@ def getASNResults(asn, testid, start_time, stop_time, probe_list):
             return (0, 0, 0, 0, 0)
         if is_success:
             try:
+                rtt_avg_list = []
                 rtt_list = []
                 for res in results:
-                    rtt_list.append(res['avg'])
-                    # Convert to numpy array
-                arr = numpy.array(rtt_list)
+                    rtt_avg_list.append(res['avg']) # append the average to the list of averages
+                    result_rtt_list = res['result']
+                    for rtt in result_rtt_list:
+                        rtt_list.append(rtt)
+                # Convert to numpy array
+                arr = numpy.array(rtt_avg_list)
                 rtt_average = numpy.average(arr)
                 rtt_mean = numpy.mean(arr)
                 rtt_median = numpy.median(arr)
@@ -164,7 +168,8 @@ def getASNResults(asn, testid, start_time, stop_time, probe_list):
             rtt_median = 0
             rtt_std = 0
             rtt_var = 0
-    return(rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var)
+            rtt_list = []
+    return(rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var, rtt_list)
 
 csv_file = 'atlasdata.csv'
 csv_columns = ['ASN', 'MSM_ID','Date','Timestamp', 'RTT', 'Mean', 'Median', 'Std', 'Var']
@@ -198,10 +203,11 @@ def plotDfs(dfs):
 
 
 def doDay(asn, id, start, stop, r_file):
+    rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var, rtt_list = getASNResults(asn, id, start, stop)
     with open(r_file, 'w') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         try:
-            rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var = getASNResults(asn, id, start, stop)
+            #rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var, rtt_list = getASNResults(asn, id, start, stop)
             # Prep row for CSV File
             row_dict = {}
             row_dict['ASN'] = asn
@@ -218,6 +224,20 @@ def doDay(asn, id, start, stop, r_file):
         except:
             e = sys.exc_info()
             print ("Error", str(e))
+    # now write out all the RTTs to a sescond CSV file
+    r_file2 = r_file.split('.')
+    r_file2 = r_file2[0]
+    r_file2 = r_file2 +"_all" + ".csv"
+    with open(r_file2,'w') as csvfile:
+        writer = csv.DictWriter(csvfile,fieldnames = ['RTT'] )
+        try:
+            row_dict = {}
+            for rtt in rtt_list:
+                row_dict['RTT'] = rtt
+                writer.writerow(row_dict)
+        except:
+            e = sys.exc_info()
+            print("error", str(e))
 
 def doAsn(asn):
     asn_rtts = []
@@ -227,17 +247,17 @@ def doAsn(asn):
     if os.path.isfile(results_file):
         os.remove(results_file)
 
-    start = datetime(2019,1,1,0)
+    start = datetime(2020,2,1,0)
     with open(results_file, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
+        writer = csv.DictWriter(csvfile, fieldnames=['ASN', 'MSM_ID','Date','Timestamp', 'RTT', 'Mean', 'Median', 'Std', 'Var'])
         writer.writeheader()
         id = 1004 # 1001 = K (anycast), 1004 = F (ISC anycast), 1013 = E-root server, 1012488 = Google
         probe_list = getProbeList(asn, id)
-        for count in range(0,(365+180)*24): #do 1.5 years
+        for count in range(0,24*120): # number of hours
             stop = start + timedelta(hours=1)
             print("ASN:" + str(asn) + " " + start.strftime('%m/%d/%Y,%H:%M:%S'))
             try:
-                rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var = getASNResults(asn, id, start, stop,probe_list)
+                rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var, rtt_list = getASNResults(asn, id, start, stop,probe_list)
                 # Prep row for CSV File
                 row_dict = {}
                 row_dict['ASN'] = asn
@@ -257,6 +277,21 @@ def doAsn(asn):
                 e = sys.exc_info()
                 print ("Error", str(e))
 
+            # now write out all the RTTs to a sescond CSV file
+            r_file2 =  'atlasdata_oct_raw' + str(asn) +'.csv'
+            with open(r_file2, 'w') as csvfile:
+                writer2 = csv.DictWriter(csvfile, fieldnames=['Timestamp','RTT'])
+                writer2.writeheader()
+                try:
+                    row_dict2 = {}
+                    for rtt in rtt_list:
+                        row_dict2['RTT'] = rtt['rtt']
+                        row_dict2['Timestamp'] = totimestamp(start)
+                        writer2.writerow(row_dict2)
+                except:
+                    e = sys.exc_info()
+                    print("error", str(e))
+
             start = stop # bump the start by an hour
 
 
@@ -273,25 +308,22 @@ def doAsn(asn):
     # plotRtts(df2)
     fn2 = results_file = 'df_' + str(asn) +'.csv'
     df.to_csv(fn2,index=True)
-    print('Finished:', asn)
     return(df2) # return the data frame
+    print('Finished:', asn)
 
 #ASNs = [7922, 22773, 20115, 6128, 7018, 20057, 22394, 3549, 209, 21928]
-NA_ASNs = [7922,22773,20115, 6128, 7018, 20057, 3549, 209, 21928,701]
-OTHER_ASNs = [5607, 2856, 12576, 13285, 3352, 12479, 12430, 1136, 33915, 6830, 2516, 17676,
+#ASNs = [7922,22773,20115, 6128, 7018, 20057, 3549, 209, 21928,701,22561]
+ASNs = [5607, 2856, 12576, 13285, 3352, 12479, 12430, 1136, 33915, 6830, 2516, 17676,
         4713, 9605, 55836, 45609, 38266, 45271]
 
 #ASNs = [7922, 22773]
 def main(argv):
     print('Network Dashboard Starting Up...')
-    for asn in NA_ASNs:
+    for asn in ASNs:
         getProbeCount(asn)
-        
-    for asn in OTHER_ASNs:
-        getProbeCount(asn)
+        #doAsn(asn)
 
-
-#    df = doAsn(7922)
+    #df = doAsn(7922)
 
 #    rtt_dfs = {} # empty dict
 #    for asn in ASNs:
@@ -301,17 +333,7 @@ def main(argv):
 
     p = []
     threadId = 0
-    for i in NA_ASNs:
-        p.append(threading.Thread(target=doAsn, args=(i,)))
-        p[threadId].start()
-        threadId = threadId + 1
-
-    for i in range(threadId-1):
-        p[i].join()
-        
-    p = []
-    threadId = 0
-    for i in OTHER_ASNs:
+    for i in ASNs:
         p.append(threading.Thread(target=doAsn, args=(i,)))
         p[threadId].start()
         threadId = threadId + 1
