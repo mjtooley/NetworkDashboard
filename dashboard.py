@@ -290,7 +290,7 @@ def doAsn(asn):
                 row_dict2['RTT'] = rtt['rtt']
                 row_dict2['Timestamp'] = totimestamp(start)
                 writer2.writerow(row_dict2)
-                print row_dict2
+                #print row_dict2
         except:
             e = sys.exc_info()
             print("error", str(e))
