@@ -243,56 +243,59 @@ def doAsn(asn):
     asn_rtts = []
     asn_times = []
     print("Starting doAsn process for " + str(asn))
-    results_file = 'atlasdata_oct_' + str(asn) +'.csv'
+    results_file = 'atlasdata_nov_' + str(asn) +'.csv'
     if os.path.isfile(results_file):
         os.remove(results_file)
 
     start = datetime(2020,2,1,0)
-    with open(results_file, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=['ASN', 'MSM_ID','Date','Timestamp', 'RTT', 'Mean', 'Median', 'Std', 'Var'])
-        writer.writeheader()
-        id = 1004 # 1001 = K (anycast), 1004 = F (ISC anycast), 1013 = E-root server, 1012488 = Google
-        probe_list = getProbeList(asn, id)
-        for count in range(0,24*120): # number of hours
-            stop = start + timedelta(hours=1)
-            print("ASN:" + str(asn) + " " + start.strftime('%m/%d/%Y,%H:%M:%S'))
-            try:
-                rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var, rtt_list = getASNResults(asn, id, start, stop,probe_list)
-                # Prep row for CSV File
-                row_dict = {}
-                row_dict['ASN'] = asn
-                row_dict['MSM_ID'] = id
-                row_dict['Date'] = start.strftime('%m/%d/%Y,%H:%M:%S')
-                row_dict['Timestamp'] = totimestamp(start)
-                row_dict['RTT'] = rtt_average
-                row_dict['Mean'] = rtt_mean
-                row_dict['Median'] = rtt_median
-                row_dict['Std'] = rtt_std
-                row_dict['Var'] = rtt_var
-                writer.writerow(row_dict)
-                asn_rtts.append(rtt_average)
-                asn_times.append(start.strftime("%Y-%m-%d %H:%M:%S.%f"))
-                # print row_dict
-            except:
-                e = sys.exc_info()
-                print ("Error", str(e))
+    csvfile = open(results_file, 'w')
+    writer = csv.DictWriter(csvfile, fieldnames=['ASN', 'MSM_ID','Date','Timestamp', 'RTT', 'Mean', 'Median', 'Std', 'Var'])
+    writer.writeheader()
+
+    r_file2 = 'atlasdata_nov_raw' + str(asn) + '.csv'
+    csvfile2 =  open(r_file2, 'w')
+    writer2 = csv.DictWriter(csvfile2, fieldnames=['Timestamp', 'RTT'])
+    writer2.writeheader()
+
+    id = 1004 # 1001 = K (anycast), 1004 = F (ISC anycast), 1013 = E-root server, 1012488 = Google
+    probe_list = getProbeList(asn, id)
+    for count in range(0,24*120): # number of hours
+        stop = start + timedelta(hours=1)
+        print("ASN:" + str(asn) + " " + start.strftime('%m/%d/%Y,%H:%M:%S'))
+        try:
+            rtt_average, rtt_mean, rtt_median, rtt_std, rtt_var, rtt_list = getASNResults(asn, id, start, stop,probe_list)
+            # Prep row for CSV File
+            row_dict = {}
+            row_dict['ASN'] = asn
+            row_dict['MSM_ID'] = id
+            row_dict['Date'] = start.strftime('%m/%d/%Y,%H:%M:%S')
+            row_dict['Timestamp'] = totimestamp(start)
+            row_dict['RTT'] = rtt_average
+            row_dict['Mean'] = rtt_mean
+            row_dict['Median'] = rtt_median
+            row_dict['Std'] = rtt_std
+            row_dict['Var'] = rtt_var
+            writer.writerow(row_dict)
+            asn_rtts.append(rtt_average)
+            asn_times.append(start.strftime("%Y-%m-%d %H:%M:%S.%f"))
+            # print row_dict
+        except:
+            e = sys.exc_info()
+            print ("Error", str(e))
 
             # now write out all the RTTs to a sescond CSV file
-            r_file2 =  'atlasdata_oct_raw' + str(asn) +'.csv'
-            with open(r_file2, 'w') as csvfile:
-                writer2 = csv.DictWriter(csvfile, fieldnames=['Timestamp','RTT'])
-                writer2.writeheader()
-                try:
-                    row_dict2 = {}
-                    for rtt in rtt_list:
-                        row_dict2['RTT'] = rtt['rtt']
-                        row_dict2['Timestamp'] = totimestamp(start)
-                        writer2.writerow(row_dict2)
-                except:
-                    e = sys.exc_info()
-                    print("error", str(e))
+        try:
+            row_dict2 = {}
+            for rtt in rtt_list:
+                row_dict2['RTT'] = rtt['rtt']
+                row_dict2['Timestamp'] = totimestamp(start)
+                writer2.writerow(row_dict2)
+                print row_dict2
+        except:
+            e = sys.exc_info()
+            print("error", str(e))
 
-            start = stop # bump the start by an hour
+        start = stop # bump the start by an hour
 
 
     # Convert lists to series
@@ -323,7 +326,7 @@ def main(argv):
         getProbeCount(asn)
         #doAsn(asn)
 
-    #df = doAsn(7922)
+    df = doAsn(7922)
 
 #    rtt_dfs = {} # empty dict
 #    for asn in ASNs:
