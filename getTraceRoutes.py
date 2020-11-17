@@ -415,6 +415,7 @@ def plotDf(df,title ):
 asn = 6128
 id = 5004 # Traceroutes 50xx
 def doASN(n):
+    print("Doing ASN " + n)
     start = datetime(2020,3,10,0)
     stop = start + timedelta(hours=1)
     n_days = 14
@@ -429,8 +430,8 @@ def doASN(n):
     df.to_csv(filename)
 
     # plot the dataframe
-    title = str(n) + " Round Trip Times"
-    plotDf(df,title=title)
+    #title = str(n) + " Round Trip Times"
+    #plotDf(df,title=title)
 
 
 def main(argv):
