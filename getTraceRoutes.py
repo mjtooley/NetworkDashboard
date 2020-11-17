@@ -200,25 +200,41 @@ def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
             except:
                 e = sys.exc_info()
                 print('Error processing tracert results', str(e))
-    lmr_a =np.array(lmr)
-    tr_a = np.array(tr_rtt)
-    isp_hops_a = np.array(isp_hops)
-    tr_hops_a = np.array(tr_hops)
+    if len(lmr) > 0:
+        lmr_a =np.array(lmr)
+        tr_a = np.array(tr_rtt)
+        isp_hops_a = np.array(isp_hops)
+        tr_hops_a = np.array(tr_hops)
 
-    df2 = {'Timestamp': start_time,
-           'Lastmile_hops': np.mean(isp_hops_a),
-           'Lastmile': np.mean(lmr_a),
-           'Lastmile_median': np.median(lmr_a),
-           'Lastmile_max': np.max(lmr_a),
-           'Lastmile_min': np.min(lmr_a),
-           'Lastmile_ste': np.std(lmr_a),
-           'TraceRt_rtt': np.mean(tr_a),
-           'TraceRt_rtt_median': np.median(tr_a),
-           'TraceRt_rtt_max': np.max(tr_a),
-           'Tracert_rtt_min': np.min(tr_a),
-           'Tracert_rtt_std': np.std(tr_a),
-           'Tracert_hops': np.mean(tr_hops_a)
-           }
+        df2 = {'Timestamp': start_time,
+               'Lastmile_hops': np.mean(isp_hops_a),
+               'Lastmile': np.mean(lmr_a),
+               'Lastmile_median': np.median(lmr_a),
+               'Lastmile_max': np.max(lmr_a),
+               'Lastmile_min': np.min(lmr_a),
+               'Lastmile_ste': np.std(lmr_a),
+               'TraceRt_rtt': np.mean(tr_a),
+               'TraceRt_rtt_median': np.median(tr_a),
+               'TraceRt_rtt_max': np.max(tr_a),
+               'Tracert_rtt_min': np.min(tr_a),
+               'Tracert_rtt_std': np.std(tr_a),
+               'Tracert_hops': np.mean(tr_hops_a)
+               }
+    else:
+         df2 = {'Timestamp': start_time,
+               'Lastmile_hops': 0,
+               'Lastmile': 0,
+               'Lastmile_median': 0,
+               'Lastmile_max': 0,
+               'Lastmile_min': 0,
+               'Lastmile_ste': 0,
+               'TraceRt_rtt': 0,
+               'TraceRt_rtt_median': 0,
+               'TraceRt_rtt_max': 0,
+               'Tracert_rtt_min': 0,
+               'Tracert_rtt_std': 0,
+               'Tracert_hops': 0
+               }
     df = df.append(df2, ignore_index=True)  # Append row to DF
     return (df)
 
