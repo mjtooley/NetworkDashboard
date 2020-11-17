@@ -456,7 +456,7 @@ def main(argv):
     #doASN(testasns)
     p = []
     threadId = 0
-    for i in testasns:
+    for i in NA_ASNs:
         p.append(threading.Thread(target=doASN, args=(i,)))
         p[threadId].start()
         threadId = threadId + 1
