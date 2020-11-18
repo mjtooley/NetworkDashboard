@@ -471,9 +471,9 @@ def plotDf(df,title ):
 asn = 6128
 id = 5004 # Traceroutes 50xx
 def doASN(n):
-    start = datetime(2020,3,10,0)
+    start = datetime(2020,3,1,0)
     stop = start + timedelta(hours=1)
-    n_days = 14
+    n_days = 60
     stop = n_days*24  # number of days x 24 hours
 
     probe_list = getProbeList(n, id)
@@ -492,18 +492,16 @@ def doASN(n):
 def main(argv):
     print('Starting Up...')
     testasns = [6128,7922]
-    doASN(6128)
-    """
+    # doASN(6128)
     p = []
     threadId = 0
-    for i in testasns:
+    for i in NA_ASNs:
         p.append(threading.Thread(target=doASN, args=(i,)))
         p[threadId].start()
         threadId = threadId + 1
 
     for i in range(threadId-1):
         p[i].join()
-    """
     print("All Finished")
 
 if __name__ == '__main__':
