@@ -363,6 +363,7 @@ from IPy import IP
 def find_first_hop_rtt(res):
     RTT_med = 0
     last_mile_RTT = 0
+    ISP_RTT = 0
     tr_rtt = 0
     hop_no = 0
     list = []
