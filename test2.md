@@ -1,7 +1,4 @@
 % title
-***
-% author(s)
-% date
 
 \pagebreak
 
