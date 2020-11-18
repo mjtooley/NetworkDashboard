@@ -1,0 +1,32 @@
+# This is the workflow to run pandoc on all pushes and PRs
+
+name: Run Pandoc
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events
+on: 
+  pull_request:
+    paths: 
+    - '/**'
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir output  # create output dir
+      - uses: docker://pandoc/latex
+        with:
+          args: --defaults=defaults.yaml -V geometry:margin=1in --citeproc --bibliography=references.yaml  --output=output/test.pdf ${{ env.FILELIST }}
+      - uses: docker://pandoc/latex
+        with:
+          args: --defaults=defaults.yaml --citeproc --bibliography=references.yaml  --output=output/test.html ${{ env.FILELIST }}
+      - uses: actions/upload-artifact@main
+        with:
+          name: output
+          path: output
