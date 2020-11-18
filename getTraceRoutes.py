@@ -151,7 +151,8 @@ def getResults(test_id,start_time,stop_time,probe_list):
 
 def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
     lmr = []
-    tr_rtt = []
+    isp_rtts = []
+    tr_rtts = []
     isp_hops = []
     tr_hops = []
     # Get the all the measurments of interest for these probes
@@ -161,7 +162,12 @@ def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
             'Lastmile_median': [],
             'Lastmile_max': [],
             'Lastmile_min': [],
-            'Lastmile_ste': [],
+            'Lastmile_std': [],
+            'Isp': [],
+            'Isp_median': [],
+            'Isp_max': [],
+            'Isp_min': [],
+            'Isp_std': [],
             'TraceRt_rtt': [],
             'TraceRt_rtt_median': [],
             'TraceRt_rtt_max': [],
@@ -188,9 +194,10 @@ def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
 
                 for result in results:
                     try:
-                        timestamp, last_mile_rtt, traceRt_rtt, total_hops, isp_hops2 = find_first_hop_rtt(result)
+                        timestamp, last_mile_rtt, isp_rtt, traceRt_rtt, total_hops, isp_hops2 = find_first_hop_rtt(result)
                         lmr.append(last_mile_rtt)
-                        tr_rtt.append(traceRt_rtt)
+                        isp_rtts.append(isp_rtt)
+                        tr_rtts.append(traceRt_rtt)
                         isp_hops.append(isp_hops2)
                         tr_hops.append((total_hops))
                     except:
@@ -202,7 +209,8 @@ def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
                 print('Error processing tracert results', str(e))
     if len(lmr) > 0:
         lmr_a =np.array(lmr)
-        tr_a = np.array(tr_rtt)
+        isp_a = np.array(isp_rtts)
+        tr_a = np.array(tr_rtts)
         isp_hops_a = np.array(isp_hops)
         tr_hops_a = np.array(tr_hops)
 
@@ -212,7 +220,12 @@ def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
                'Lastmile_median': np.median(lmr_a),
                'Lastmile_max': np.max(lmr_a),
                'Lastmile_min': np.min(lmr_a),
-               'Lastmile_ste': np.std(lmr_a),
+               'Lastmile_std': np.std(lmr_a),
+               'Isp': np.mean(isp_a),
+               'Isp_median': np.median(isp_a),
+               'Isp_max': np.max(isp_a),
+               'Isp_min': np.min(isp_a),
+               'Isp_std': np.std(isp_a),
                'TraceRt_rtt': np.mean(tr_a),
                'TraceRt_rtt_median': np.median(tr_a),
                'TraceRt_rtt_max': np.max(tr_a),
@@ -221,13 +234,18 @@ def getTraceRtResults(asn, testid, start_time, stop_time, probe_list):
                'Tracert_hops': np.mean(tr_hops_a)
                }
     else:
-         df2 = {'Timestamp': start_time,
+        df2 = {'Timestamp': start_time,
                'Lastmile_hops': 0,
                'Lastmile': 0,
                'Lastmile_median': 0,
                'Lastmile_max': 0,
                'Lastmile_min': 0,
                'Lastmile_ste': 0,
+               'Isp': 0,
+               'Isp_median': 0,
+               'Isp_max': 0,
+               'Isp_min': 0,
+               'Isp_std': 0,
                'TraceRt_rtt': 0,
                'TraceRt_rtt_median': 0,
                'TraceRt_rtt_max': 0,
@@ -341,6 +359,7 @@ def getASNResults(asn, testid, start_time, days, probe_list):
 
     return(df_results)
 
+from IPy import IP
 def find_first_hop_rtt(res):
     RTT_med = 0
     last_mile_RTT = 0
@@ -350,50 +369,71 @@ def find_first_hop_rtt(res):
     new_count = 0
     counter = 0
     prev_asn_name = " "
-    j=0
+    b_private = False # boolean for tracking edge of private network
+    b_asn_found = False
     Total_h = len(res['result']) # Get number of hops
+    prev_ip_type = 'PRIVATE'
 
     if res['result'][Total_h - 1]['hop'] != 255:
-        for i in range(0, Total_h):
+        for hop in range(0, Total_h):
             try:
-                hop_ip = res['result'][i]['result'][0]['from']
+                hop_ip = res['result'][hop]['result'][0]['from']
                 new_count += 1
                 now_asn, inter_network_name = getAsn(hop_ip)
-                if j == 0:
+                ip = IP(hop_ip)
+                ip_type = ip.iptype()
+
+                #Check for first public hop
+                if prev_ip_type == 'PRIVATE' and ip_type == 'PUBLIC':
+                    lm_rtt = []
+                    if 'rtt' in res['result'][hop]['result'][0]:
+                        lm_rtt.append(res['result'][hop]['result'][0]['rtt'])
+                    if 'rtt' in res['result'][hop]['result'][1]:
+                        lm_rtt.append(res['result'][hop]['result'][1]['rtt'])
+                    if 'rtt' in res['result'][hop]['result'][2]:
+                        lm_rtt.append(res['result'][hop]['result'][2]['rtt'])
+
+                    last_mile_RTT = sum(lm_rtt) / len(lm_rtt)  # Calculate the average of for this first public hop
+
+                if b_asn_found == False:
                     prev_asn_name = inter_network_name
-                    j = 1
+                    b_asn_found = True
                 else:
                     if prev_asn_name != inter_network_name and counter < 1 and now_asn is not None:
-                        hop_no = i
+                        hop_no = hop
                         counter = 1
-                        name = prev_asn_name
-                        last_mile_RTT = RTT_med            # find the edge
-                        description = inter_network_name  # ISP Name
+                        ISP_RTT = RTT_med            # find the edge
 
                 if prev_asn_name != inter_network_name and counter == 1 and now_asn is not None:
-                    isp_hops = i
-                    rtt1 = res['result'][isp_hops]['result'][0]['rtt']
-                    rtt2 = res['result'][isp_hops]['result'][1]['rtt']
-                    rtt3 = res['result'][isp_hops]['result'][2]['rtt']
-                    tr_rtt = (rtt1 + rtt2 + rtt3)/3
+                    isp_hops = hop
+                    tr_rtts = []
+                    if 'rtt' in res['result'][hop]['result'][0]:
+                        tr_rtts.append(res['result'][isp_hops]['result'][0]['rtt'])
+                    if 'rtt' in res['result'][hop]['result'][1]:
+                        tr_rtts.append(res['result'][isp_hops]['result'][1]['rtt'])
+                    if 'rtt' in res['result'][hop]['result'][2]:
+                        tr_rtts.append(res['result'][isp_hops]['result'][2]['rtt'])
+                    tr_rtt = sum(tr_rtts)/len(tr_rtts) # mean
 
                 rtt = []
-                pack_size = res['result'][i]['result'][0]['size']
-                rtt.append(res['result'][i]['result'][0]['rtt'])
-                rtt.append(res['result'][i]['result'][1]['rtt'])
-                rtt.append(res['result'][i]['result'][2]['rtt'])   # find RTT for all three packets
-                RTT_med = sorted(rtt)[len(rtt) // 2]               # find the RTT median
-                dest_name=inter_network_name
-                prev_asn = now_asn
+                if 'rtt' in res['result'][hop]['result'][0]:
+                    rtt.append(res['result'][hop]['result'][0]['rtt'])
+                if 'rtt' in res['result'][hop]['result'][1]:
+                    rtt.append(res['result'][hop]['result'][1]['rtt'])
+                if 'rtt' in res['result'][hop]['result'][2]:
+                    rtt.append(res['result'][hop]['result'][2]['rtt'])
+                RTT_med = sorted(rtt)[len(rtt) // 2]             # find the RTT median
+
                 prev_asn_name = inter_network_name
+                prev_ip_type = ip_type
 
             except KeyError: # the traceroute result is **** indicating unknown, so skip.
-                    pass
+                pass
 
     timestamp = res['timestamp']
     total_hops = Total_h
     isp_hops = hop_no
-    return(timestamp,last_mile_RTT,tr_rtt, total_hops, isp_hops)
+    return(timestamp,last_mile_RTT, ISP_RTT, tr_rtt, total_hops, isp_hops)
 
 
 
@@ -431,7 +471,6 @@ def plotDf(df,title ):
 asn = 6128
 id = 5004 # Traceroutes 50xx
 def doASN(n):
-    print("Doing ASN " + str(n))
     start = datetime(2020,3,10,0)
     stop = start + timedelta(hours=1)
     n_days = 14
@@ -446,24 +485,25 @@ def doASN(n):
     df.to_csv(filename)
 
     # plot the dataframe
-    #title = str(n) + " Round Trip Times"
-    #plotDf(df,title=title)
+    title = str(n) + " Round Trip Times"
+    plotDf(df,title=title)
 
 
 def main(argv):
     print('Starting Up...')
     testasns = [6128,7922]
-    #doASN(testasns)
+    doASN(6128)
+    """
     p = []
     threadId = 0
-    for i in NA_ASNs:
+    for i in testasns:
         p.append(threading.Thread(target=doASN, args=(i,)))
         p[threadId].start()
         threadId = threadId + 1
 
     for i in range(threadId-1):
         p[i].join()
-
+    """
     print("All Finished")
 
 if __name__ == '__main__':
