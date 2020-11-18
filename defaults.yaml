@@ -22,9 +22,9 @@ input-file: pandemic_performance/bitag2_pandemic_performance_report.md
 # metadata values specified here are parsed as literal
 # string text, not markdown:
 metadata:
-author:
-  - Matt Tooley
-  - Jason Livingood
+#author:
+#  - Matt Tooley
+#  - Jason Livingood
 # metadata-files:
 # - boilerplate.yaml
 # or you may use metadata-file: with a single value
