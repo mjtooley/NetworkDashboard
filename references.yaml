@@ -1,0 +1,11 @@
+---
+references:
+  - id: aca1
+    type: article-journal
+    link-citations: true
+    title: Network Performance During the COVID-19 Crisis
+    accessed: 
+      year: 2020
+      month: 9
+      day: 27
+    URL: https://acaconnects.org/covid-19/broadband-dashboard/
