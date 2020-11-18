@@ -420,7 +420,7 @@ def find_first_hop_rtt(res):
                         tr_rtts.append(res['result'][isp_hops]['result'][2]['rtt'])
                     if len(tr_rtts) > 0:
                         tr_rtt = sum(tr_rtts)/len(tr_rtts) # mean
-                    else
+                    else:
                         tr_rtt = 0
 
                 rtt = []
