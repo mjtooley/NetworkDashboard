@@ -359,6 +359,7 @@ def getASNResults(asn, testid, start_time, days, probe_list):
 
     return(df_results)
 
+import statistics
 from IPy import IP
 def find_first_hop_rtt(res):
     RTT_med = 0
@@ -394,7 +395,10 @@ def find_first_hop_rtt(res):
                     if 'rtt' in res['result'][hop]['result'][2]:
                         lm_rtt.append(res['result'][hop]['result'][2]['rtt'])
 
-                    last_mile_RTT = sum(lm_rtt) / len(lm_rtt)  # Calculate the average of for this first public hop
+                    if len(lm_rtt) > 0:
+                        last_mile_RTT = sum(lm_rtt) / len(lm_rtt)  # Calculate the average of for this first public hop
+                    else:
+                        last_mile_RTT = 0
 
                 if b_asn_found == False:
                     prev_asn_name = inter_network_name
@@ -414,7 +418,10 @@ def find_first_hop_rtt(res):
                         tr_rtts.append(res['result'][isp_hops]['result'][1]['rtt'])
                     if 'rtt' in res['result'][hop]['result'][2]:
                         tr_rtts.append(res['result'][isp_hops]['result'][2]['rtt'])
-                    tr_rtt = sum(tr_rtts)/len(tr_rtts) # mean
+                    if len(tr_rtts) > 0:
+                        tr_rtt = sum(tr_rtts)/len(tr_rtts) # mean
+                    else
+                        tr_rtt = 0
 
                 rtt = []
                 if 'rtt' in res['result'][hop]['result'][0]:
@@ -423,7 +430,10 @@ def find_first_hop_rtt(res):
                     rtt.append(res['result'][hop]['result'][1]['rtt'])
                 if 'rtt' in res['result'][hop]['result'][2]:
                     rtt.append(res['result'][hop]['result'][2]['rtt'])
-                RTT_med = sorted(rtt)[len(rtt) // 2]             # find the RTT median
+                try:
+                    RTT_med = statistics.median(rtt) # find the RTT median
+                except:
+                    RTT_med = 0 # No valid RTTs in the list
 
                 prev_asn_name = inter_network_name
                 prev_ip_type = ip_type
@@ -472,9 +482,10 @@ def plotDf(df,title ):
 asn = 6128
 id = 5004 # Traceroutes 50xx
 def doASN(n):
-    start = datetime(2020,3,1,0)
+    print("doASN " + str(n))
+    start = datetime(2020,3,15,1)
     stop = start + timedelta(hours=1)
-    n_days = 60
+    n_days = 14
     stop = n_days*24  # number of days x 24 hours
 
     probe_list = getProbeList(n, id)
@@ -493,16 +504,19 @@ def doASN(n):
 def main(argv):
     print('Starting Up...')
     testasns = [6128,7922]
-    # doASN(6128)
+    for n in NA_ASNs:
+        doASN(n)
+    """
     p = []
     threadId = 0
-    for i in NA_ASNs:
+    for i in testasns:
         p.append(threading.Thread(target=doASN, args=(i,)))
         p[threadId].start()
         threadId = threadId + 1
 
     for i in range(threadId-1):
         p[i].join()
+    """
     print("All Finished")
 
 if __name__ == '__main__':
