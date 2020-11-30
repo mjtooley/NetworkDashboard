@@ -4,7 +4,7 @@
 
 # Header 1
 text
-This is a footnote^[A footnote example]
+This is a footnote^[ A footnote example.]
 
 
 
