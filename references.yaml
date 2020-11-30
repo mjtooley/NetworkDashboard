@@ -1,9 +1,18 @@
 ---
 references:
-  - id: aca1
+  - id: cite1
     type: article-journal
     link-citations: true
     title: Network Performance During the COVID-19 Crisis
+    author:
+    - family: Tooley
+      given: Matt
+    link-citations: true
+    title: "How COVID-19 is affecting internet performance"
+    published:
+      year: 2020
+      month: 4
+      day: 8
     accessed: 
       year: 2020
       month: 9
