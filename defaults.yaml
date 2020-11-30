@@ -54,7 +54,8 @@ metadata:
 # log-file: log.json
 # citeproc, natbib, or biblatex
 cite-method: citeproc
-csl: chicago-note-bibliography.csl
+#csl: chicago-note-bibliography.csl
+csl: ieee.csl
 # part, chapter, section, or default:
 # top-level-division: chapter
 # abbreviations:
