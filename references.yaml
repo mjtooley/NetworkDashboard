@@ -64,4 +64,438 @@ references:
       year: 2020
       month: 11
       day: 29
-    URL: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline 
+    URL: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline
+    
+  - id: wp1
+    type: article-journal
+    publisher: The Washington Post
+    author:
+    - family: Timberg
+      given: Craig
+    link-citations: true
+    title: "Your Internet is working. Thank these Cold War-era pioneers who designed it to handle almost anything"
+    published:
+      year: 2020
+      month: 4
+      day: 6
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.washingtonpost.com/technology/2020/04/06/your-internet-is-working-thank-these-cold-war-era-pioneers-who-designed-it-handle-almost-anything/
+          
+  - id: nokia1
+    type: article-journal
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Early effects of COVID-19 lockdowns on service provider networks: the networks soldier on!"
+    published:
+      year: 2020
+      month: 3
+      day: 27
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/early-effects-covid-19-lockdowns-service-provider-networks-networks-soldier/
+        
+  - id: nokia2
+    type: website
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Network traffic insights in the time of COVID-19: March 16-March 22 update"
+    published:
+      year: 2020
+      month: 3
+      day: 27
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/network-traffic-insights-time-covid-19-march-16-march-22-update/
+        
+  - id: nokia3
+    type: website
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Network traffic insights in the time of COVID-19: March 23-29 update"
+    published:
+      year: 2020
+      month: 4
+      day: 2
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/network-traffic-insights-time-covid-19-march-23-29-update/
+        
+  - id: nokia4
+    type: article-journal
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Network traffic insights in the time of COVID-19: April 9 update"
+    published:
+      year: 2020
+      month: 4
+      day: 9
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/network-traffic-insights-time-covid-19-april-9-update/
+        
+  - id: verge1
+    type: article-journal
+    publisher: The Verge
+    author:
+    - family: Chin
+      given: Monica
+    link-citations: true
+    title: "The pandemic has made it harder to buy a new laptop"
+    published:
+      year: 2020
+      month: 6
+      day: 4
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.theverge.com/2020/6/4/21279633/laptop-pc-shortages-supply-chain-coronavirus-covid-19-pandemic
+        
+  - id: nytimes1
+    type: article-journal
+    publisher: The New York Times
+    author:
+    - family: Browning
+      given: Kellen
+    link-citations: true
+    title: "The Digital Divide Starts With a Laptop Shortage"
+    published:
+      year: 2020
+      month: 10
+      day: 12
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nytimes.com/2020/10/12/technology/laptops-schools-digital-divide.html
+        
+  - id: edweek1
+    type: article-journal
+    publisher: Education Week
+    author:
+    - family: Rauf
+      given: David Saleh
+    link-citations: true
+    title: "Coronavirus Squeezes Supply of Chromebooks, iPads, and Other Digital Learning Devices"
+    published:
+      year: 2020
+      month: 4
+      day: 16
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.edweek.org/ew/articles/2020/04/01/coronavirus-squeezes-supply-of-chromebooks-ipads-and.html
+        
+  - id: cnbc1
+    type: article-journal
+    publisher: "CNBC@Work Spotlight"
+    author:
+    - family: Novet
+      given: Jordan
+    link-citations: true
+    title: "The PC is suddenly cool again ... for now"
+    published:
+      year: 2020
+      month: 5
+      day: 4
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.cnbc.com/2020/05/04/pc-sales-usage-rise-during-coronavirus-lockdown.html
+        
+  - id: qz1
+    type: article-journal
+    publisher: quartz
+    author:
+    - family: Ho
+      given: Karen
+    link-citations: true
+    title: "US computer sales spiked in the rush to work from home"
+    published:
+      year: 2020
+      month: 7
+      day: 29
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://qz.com/1881730/us-computer-sales-spiked-67-percent-after-switch-to-remote-work/
+        
+  - id: fcc1
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: "Keep Americans Connected"
+    published:
+      year: 2020
+      month: 7
+      day: 8
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.fcc.gov/keep-americans-connected
+        
+  - id: fcc2
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: "Companies Have Gone Above and Beyond the Call to Keep Americans Connected During Pandemic"
+    published:
+      year: 2020
+      month: 10
+      day: 14
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.fcc.gov/companies-have-gone-above-and-beyond-call-keep-americans-connected-during-pandemic
+        
+  - id: ctia1
+    type: article-journal
+    publisher: CTIA – The Wireless Association
+    link-citations: true
+    title: "How Wireless Kept Americans Connected During COVID-19"
+    published:
+      year: 2020
+      month: 6
+      day: 23
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.ctia.org/news/report-how-wireless-kept-americans-connected-during-covid-19
+    
+  - id: ctia2
+    type: website
+    publisher: CTIA – The Wireless Association
+    link-citations: true
+    title: "The Wireless Industry Responds to COVID-19"
+    published:
+      year: 2020
+      month: 10
+      day: 23
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    locator: Network Performance
+    lablel: Heading
+    URL: https://www.ctia.org/homepage/covid-19
+    
+  - id: ustel1
+    type: website
+    publisher: "USTelecom: The Broadband Association"
+    link-citations: true
+    title: "Network Performance"
+    published:
+      year: 2020
+      month: 7
+      day: 21
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.ustelecom.org/research/network-performance-data/#
+        
+  - id: ncta2
+    type: article-journal
+    publisher: "NCTA - The Internet & Television Association"
+    link-citations: true
+    title: "Supporting America's Schools During COVID-19"
+    published:
+      year: 2020
+      month: 5
+      day: 8
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.ncta.com/whats-new/supporting-americas-schools-during-covid-19
+        
+  - id: ncta3
+    type: article-journal
+    publisher: "NCTA - The Internet & Television Association"
+    link-citations: true
+    title: "Distance Learning"
+    published:
+      year: 2020
+      month: 9
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.ncta.com/positions/distance-learning
+    
+  - id: scte1 
+    publisher: SCTE-ISBE 
+    Conference Title: "2020 Fall Technical Forum: SCTE-ISBE, NCTA, CABLELabs"
+    author:
+    - family: Ulm
+      given: John
+    - family: Cloonan
+      given: Thomas
+    link-citations: true
+    title: "Managing the Coronavirus Bandwidth Surge: How to Cope with Spikes and Long-term Growth"
+    published:
+      year: 2020
+      month: 10
+      day: 12
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.nctatechnicalpapers.com/Paper/2020/2020-managing-the-coronavirus-bandwidth-surge
+    
+  - id: scte2 
+    type: article-journal
+    publisher: SCTE-ISBE 
+    Conference Title: "2020 Fall Technical Forum: SCTE-ISBE, NCTA, CABLELabs"
+    author:
+    - family: Barker Jr.
+      given: Bruce E.
+    - family: Bou Abboud
+      given: Claude
+    - family: Neeld
+      given: Erik
+    link-citations: true
+    title: "Access Capacity Planning: Staying Well Ahead of Customer Demand Helped Ensure Stability During COVID-19"
+    published:
+      year: 2020
+      month: 10
+      day: 12
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nctatechnicalpapers.com/Paper/2020/2020-access-capacity-planning
+
+  - id: openvault 
+    type: webpage
+    link-citations: true
+    title: "COVID-19 BROADBAND USAGE “REACHING A PLATEAU,” SAYS OPENVAULT"
+    issued:
+      year: 2020
+      month: 4
+      day: 7
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    publisher: Openvault
+    URL: https://openvault.com/covid-19-broadband-usage-reaching-a-plateau-says-openvault/
+    
+  - id: scte3 
+    type: article-journal
+    publisher: SCTE-ISBE 
+    Conference Title: "2019 Fall Technical Forum: SCTE-ISBE, NCTA, CABLELabs"
+    link-citations: true
+    title: "The Broadband Network Evolution Continues - How Do We Get to Cable 10G?"
+    author: 
+    - family: Ulm
+      given: John
+    - family: Cloonan
+      given: Tom
+    locator: 10
+    label: page
+    issued:
+      year: 2019
+      month: 9
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.nctatechnicalpapers.com/Paper/2019/2019-the-broadband-network-evolution-continues
+ 
+  - id: nytimes2
+    type: article-journal
+    publisher: The New York Times
+    author:
+    - family: Koeze
+      given: Ella
+    - family: Popper
+      given: Nathaniel
+    link-citations: true
+    title: "The Virus Changed the Way We Internet"
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.nytimes.com/interactive/2020/04/07/technology/coronavirus-internet-use.htmll  
+    
+  - id: feamster2
+    type: article-journal
+    publisher: Association for Computing Machineary (ACM) Digital Library
+    publication: Proceedings of the ACM on Measurement and Analysis of Computing Systems December 2019 Article No. 56 
+    author:
+    - family: Bronzino
+      given: Francesco
+    - family: Schmitt
+      given: Paul
+    - family: Ayoubi
+      given: Sara
+    - family: Martins
+      given: Guilherme
+    - family: Teixeira
+      given: Renata
+    - family: Feamster
+      given: Nick
+    link-citations: true
+    title: "Inferrring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience"
+    published:
+      year: 2019
+      month: 12
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://doi.org/10.1145/3366704   
+
+  - id: feamster1
+    type: article-journal
+    publisher: Association for Computing Machineary (ACM) Digital Library
+    publication: "IMC '13: Proceedings of the 2013 conference on Internet measurement conferenceOctober 2013 Pages 213–226"
+    author:
+    - family: Sundaresan
+      given: Srikanth
+    - family: Feamster
+      given: Nick
+    - family: Teixeira
+      given: Renata
+    - family: Magharei
+      given: Nazanin
+    link-citations: true
+    title: "Measuring and Mitigating Web Performance Bottlenecks in Broadband Access Networks"
+    published:
+      year: 2013
+      month: 10
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: http://dx.doi.org/10.1145/2504730.2504741
