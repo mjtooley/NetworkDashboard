@@ -499,3 +499,494 @@ references:
       month: 11
       day: 30
     URL: http://dx.doi.org/10.1145/2504730.2504741
+    
+  - id: Labovitz1
+    type: article-journal
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Internet Traffic 2009-2019"
+    published:
+      year: 2019
+      month: 6
+      day: 10
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://pc.nanog.org/static/published/meetings/NANOG76/1972/20190610_Labovitz_Internet_Traffic_2009-2019_v1.pdf
+
+  - id: akamai1
+    publisher: Akamai
+    author:
+    - family: Leighton
+      given: Tom
+    link-citations: true
+    title: "Working Together to Manage Global Internet Traffic Increases"
+    published:
+      year: 2020
+      month: 3
+      day: 24
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://blogs.akamai.com/2020/03/working-together-to-manage-global-internet-traffic-increases.html
+
+  - id: pk1
+    type: article-journal
+    publisher: Public Knowledge
+    //author:
+    - family: Harris
+      given: Dallas
+    link-citations: true
+    title: "The FCC and Automakers Must Save Our Wifi"
+    published:
+      year: 2016
+      month: 6
+      day: 27
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.publicknowledge.org/video/the-fcc-and-automakers-must-save-our-wifi/
+   
+  - id: dclark1
+    type: article-journal
+    publisher: Internet Architecture Board (IAB)
+    author:
+    - family: Clark
+      given: David
+    link-citations: true
+    title: "Measurment of congestion on ISP interconnection links"
+    published:
+      year: 2020
+      month: 10
+      day: 16
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.iab.org/wp-content/IAB-uploads/2020/10/covid19-clark.pdf
+   
+  - id: liu1
+    type: article-journal
+    publisher: Internet Architecture Board (IAB)
+    author:
+    - family: Bronzino
+      given: Francesco
+    - family: Culley
+      given: Elizabeth
+    - family: Feamster
+      given: Nick
+    - family: Liu
+      given: Shinan
+    - family: Livingood
+      given: Jason
+    - family: Schmitt
+      given: Paul
+    link-citations: true
+    title: "Characterizing Service Provider Response to the COVID-19 Pandemic in the United States"
+    published:
+      year: 2020
+      month: 10
+      day: 28
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://datatracker.ietf.org/doc/draft-feamster-livingood-iab-covid19-workshop/
+
+  - id: intro1
+    type: article-journal
+    publisher: PricewaterhouseCoopers (PwC)
+    link-citations: true
+    title: "COVID-19 and the telecommunications industry: Practical steps for responding to the coronavirus crisis"
+    published:
+      year: 2020
+      month: 4
+      day: 29
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.pwc.com/us/en/library/covid-19/coronavirus-telecommunication-impact.html
+    
+  - id: wifi32
+    type: article-journal
+    publisher: "The New York Times: Wirecutter"
+    author:
+    - family: Santo Domingo
+      given: Joel
+    link-citations: true
+    title: The Best Wi-Fi Mesh-Networking Kits
+    published:
+      year: 2020
+      month: 11
+      day: 25
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.nytimes.com/wirecutter/reviews/best-wi-fi-mesh-networking-kits/
+    
+    
+  - id: wifiTom32
+    type: article-journal
+    publisher: "Tom's Guide"
+    author:
+    - family: Westover
+      given: Brian
+    link-citations: true
+    title: The best Wi-Fi extenders in 2020
+    published:
+      year: 2020
+      month: 11
+      day: 4
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.tomsguide.com/us/best-wifi-extenders,review-2225.html
+    
+  - id: wifi33
+    type: article-journal
+    publisher: Ars Technica
+    author:
+    - family: Salter
+      given: Jim
+    link-citations: true
+    title: Your COVID-19 Internet problems might be COVID-19 Wi-Fi problems
+    published:
+      year: 2020
+      month: 4
+      day: 14
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://arstechnica.com/gadgets/2020/04/remote-work-lagging-if-you-cant-plug-it-in-upgrade-to-mesh/
+    
+  - id: wifi34
+    type: article-journal
+    publisher: The Verge
+    author:
+    - family: Kastrenakes
+      given: Jacob
+    link-citations: true
+    title: "Wi-Fi 6: is it really that much faster?"
+    published:
+      year: 2019
+      month: 2
+      day: 21
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.theverge.com/2019/2/21/18232026/wi-fi-6-speed-explained-router-wifi-how-does-work
+    
+  - id: entn1
+    type: article-journal
+    publisher: NetworkWorld from IDG
+    author:
+    - family: Cooney
+      given: Michael
+    link-citations: true
+    title: Coronavirus challenges remote networking
+    published:
+      year: 2020
+      month: 3
+      day: 19
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.networkworld.com/article/3532440/coronavirus-challenges-remote-networking.html
+    
+  - id: entn2
+    type: article-journal
+    publisher: Security Boulevard
+    author:
+    - family: Voltiz
+      given: Inbal
+    link-citations: true
+    title: How the Coronavirus Lockdown Is Changing the VPN Landscape
+    published:
+      year: 2020
+      month: 5
+      day: 28
+    accessed: 
+      year: 2020
+      month: 11
+      day: 302
+    URL: https://securityboulevard.com/2020/05/how-the-coronavirus-lockdown-is-changing-the-vpn-landscape/
+    
+  - id: entn3
+    type: article-journal
+    publisher: The New York Times
+    author:
+    - family: Koeze
+      given: Ella
+    - family: Popper
+      given: Nathaniel
+    link-citations: true
+    title: The Virus Changed the Way We Internet
+    published:
+      year: 2020
+      month: 4
+      day: 7
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.nytimes.com/interactive/2020/04/07/technology/coronavirus-internet-use.html
+    
+  - id: entn4
+    type: article-journal
+    publisher: "Wikipedia: The Free Encyclopedia"
+    link-citations: true
+    title: Wikipedia entry on Split Tunneling
+    published:
+      year: 2020
+      month: 10
+      day: 29
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://en.wikipedia.org/wiki/Split_tunneling
+    
+  - id: cisco1
+    type: article-journal
+    publisher: Cisco WebEx
+    author:
+    - family: Srinivasan
+      given: Sri
+    link-citations: true
+    title: "Cisco Webex: Supporting customers during this unprecedented time"
+    published:
+      year: 2020
+      month: 3
+      day: 2
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://blog.webex.com/video-conferencing/cisco-webex-supporting-customers-during-this-unprecedented-time/
+    
+  - id: cisco2
+    type: article-journal
+    publisher: Internet Architecture Board (IAB)
+    author:
+    - family: Jennings
+      given: Cullen
+    - family: Kozanian
+      given: Panos
+    link-citations: true
+    title: "WebEx Scaling During Covid"
+    published:
+      year: 2020
+      month: 10
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.iab.org/wp-content/IAB-uploads/2020/10/covid19-jennings.pdf
+    
+  - id: zoom1
+    type: article-journal
+    publisher: Zoom
+    author:
+    - family: Yuan
+      given: Eric S.
+    link-citations: true
+    title: "Zoom’s Commitment to User Support & Business Continuity During the Coronavirus Outbreak"
+    published:
+      year: 2020
+      month: 2
+      day: 26
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://blog.zoom.us/zoom-commitment-user-support-business-continuity-during-coronavirus-outbreak/
+    
+  - id: zoom2
+    type: article-journal
+    publisher: Forbes
+    author:
+    - family: Konrad
+      given: Alex
+    link-citations: true
+    title: "Exclusive: Zoom CEO Eric Yuan Is Giving K-12 Schools His Videoconferencing Tools For Free"
+    published:
+      year: 2020
+      month: 3
+      day: 13
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.forbes.com/sites/alexkonrad/2020/03/13/zoom-video-coronavirus-eric-yuan-schools/
+    
+  - id: zoom3
+    type: article-journal
+    publisher: The Verge
+    author:
+    - family: Kastrenakes
+      given: Jacob
+    link-citations: true
+    title: "Zoom saw a huge increase in subscribers — and revenue — thanks to the pandemic"
+    published:
+      year: 2020
+      month: 6
+      day: 2
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.theverge.com/2020/6/2/21277006/zoom-q1-2021-earnings-coronavirus-pandemic-work-from-home
+    
+  - id: zoom4
+    type: article-journal
+    publisher: The Verge
+    author:
+    - family: Kastrenakes
+      given: Jacob
+    link-citations: true
+    title: "Zoom saw a huge increase in subscribers — and revenue — thanks to the pandemic"
+    published:
+      year: 2020
+      month: 6
+      day: 2
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.theverge.com/2020/6/2/21277006/zoom-q1-2021-earnings-coronavirus-pandemic-work-from-home
+
+  - id: nanog1
+    type: article-journal
+    publisher: YouTube
+    network: TeamNANOG
+    moderator:
+    - family: Burke
+      given: Samuel
+    panelists:
+    - family: Kinsey
+      given: Graham
+    - family: Rockell
+      given: Robert
+    - family: Temkin
+      given: David
+    link-citations: true
+    title: "Networks' responses to COVID-19"
+    original airing date: 
+      year: 2020
+      month: 6
+      day: 30
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.youtube.com/watch?v=aolGV9eBwro&feature=youtu.be
+    
+  - id: netflix1
+    type: article-journal
+    publisher: ZDNet
+    author:
+    - family: Condon
+      given: Stephanie
+    link-citations: true
+    title: "Netflix agrees to reduce streaming bit rates to Europe"
+    published:
+      year: 2020
+      month: 3
+      day: 19
+    accessed: 
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.zdnet.com/article/netflix-agrees-to-reduce-streaming-quality-to-europe/
+    
+  - id: fb1
+    type: article-journal
+    link-citations: true
+    title: "How the Internet Reacted to Covid-19: A Perspective from Facebook's Edge Network"
+    author:
+    - family: Bottger
+      given: Timm
+    - family: Ibrahim
+      given: Ghida
+    - family: Vallis
+      given: Ben
+    isbn: 9781450381383
+    doi: 10.1145/3419394.3423621
+    locator: 34-41
+    label: pages
+    location: Virtual Event, USA
+    series: IMC '20
+    issued:
+      year: 2020
+      month: 10
+      day: 27
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://doi.org/10.1145/3419394.3423621   
+    publisher: Association for Computing Machinery
+    address: New York, NY, USA
+
+
+  - id: zoom1
+    type: article-journal
+    link-citations: true
+    title: Zoom’s Commitment to User Support & Business Continuity During the Coronavirus Outbreak
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://blog.zoom.us/zoom-commitment-user-support-business-continuity-during-coronavirus-outbreak
+    
+  - id: zoom2
+    type: article-journal
+    link-citations: true
+    title: Zoom’s Commitment to User Support & Business Continuity During the Coronavirus Outbreak
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.forbes.com/sites/alexkonrad/2020/03/13/zoom-video-coronavirus-eric-yuan-schools/?sh=40a24714e71
+   
+  - id: zoom3
+    type: article-journal
+    link-citations: true
+    title: Zoom saw a huge increase in subscribers — and revenue — thanks to the pandemic
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.theverge.com/2020/6/2/21277006/zoom-q1-2021-earnings-coronavirus-pandemic-work-from-home
+   
+  - id: msf1
+    type: article-journal
+    link-citations: true
+    title: Learning from our customers in Italy
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/08/learning-from-customers-italy/
+   
+  - id: zoom4
+    type: article-journal
+    link-citations: true
+    title: Zoom Reports First Quarter Results for Fiscal Year 2021
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://investors.zoom.us/news-releases/news-release-details/zoom-reports-first-quarter-results-fiscal-year-2021
