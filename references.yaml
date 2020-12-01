@@ -1695,3 +1695,59 @@ references:
        day: 2
     URL: https://investor.pypl.com/news-and-events/news-details/2020/PayPal-Reports-Third-Quarter-2020-Results/default.aspx
 
+  - id: fcc8
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: Home Network Tips for the Coronavirus Pandemic
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 7
+    URL: https://www.fcc.gov/home-network-tips-coronavirus-pandemic 
+    
+  - id: fcc9
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: Keep Americans Connected Pledge
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 7
+    URL: https://www.fcc.gov/keep-americans-connected 
+    
+  - id: cica1
+    type: website
+    publisher: Cybersecurity and Infrastructure Security Agency (CISA) 
+    link-citations: true
+    title: "Memorandum on Identification of Essential Critical Infrastructure Workers During COVID-19 Response" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 3
+    URL: https://www.cisa.gov/sites/default/files/publications/CISA-Guidance-on-Essential-Critical-Infrastructure-Workers-1-20-508c.pdf 
+    
+  - id: ifc20
+    type: article-journal
+    publisher: "IFC- International Finance Corporation, World Bank Group" 
+    link-citations: true
+    title: "COVID-19’s Impact on the Global Telecommunications Industry" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 5
+    URL: https://www.ifc.org/wps/wcm/connect/1d490aec-4d57-4cbf-82b3-d6842eecd9b2/IFC-Covid19-Telecommunications_final_web_2.pdf?MOD=AJPERES&CVID=n9nxogP
+
