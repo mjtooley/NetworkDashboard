@@ -1580,3 +1580,17 @@ references:
        month: 11
        day: 04
     URL: https://www.linux.org/docs/man8/tc-fq_codel.html
+    
+  - id: eero2
+    type: website
+    publisher: eero Labs, An Amazon Company
+    link-citations: true
+    title: "eero.com: What is eero labs"
+    published:
+      year: 2020
+      month: 10
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://support.eero.com/hc/en-us/articles/360000709886-What-is-eero-Labs-
