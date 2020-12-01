@@ -1594,3 +1594,104 @@ references:
        month: 11
        day: 04
     URL: https://support.eero.com/hc/en-us/articles/360000709886-What-is-eero-Labs-
+    
+
+  - id: cablelabs1
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: ACTIVE QUEUE MANAGEMENT; ALGORITHMS FOR DOCSIS 3.0, A Simulation Study of CoDel, SFQ-CoDel and PIE in DOCSIS 3.0 Networks"
+    published:
+      year: 2020
+      month: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: https://www.cablelabs.com/wp-content/uploads/2014/05/Active_Queue_Management_Algorithms_DOCSIS_3_0.pdf
+
+  - id: cablelabs2
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: Network Technologies; ACTIVE QUEUE MANAGEMENT IN DOCSIS 3.X CABLE MODEMS"
+    published:
+      year: 2020
+      month: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www-res.cablelabs.com/wp-content/uploads/2019/02/28094021/DOCSIS-AQM_May2014.pdf
+
+  - id: cablelabs3
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: Low Latency DOCSIS"
+    published:
+      year: 2020
+      month: 6
+      day: 24
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: https://www.cablelabs.com/technologies/low-latency-docsis
+
+  - id: cablelabs4
+    type: article-journal
+    link-citations: true
+    title: "CableLabs: Low Latency DOCSIS"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.cablelabs.com/technologies/low-latency-docsis
+     
+  - id: vz1
+    type: website
+    publisher: Verizon
+    link-citations: true
+    title: "Verizon delivers network reliability during COVID-19 while accelerating 5G deployments"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 6
+       day: 11
+    URL: https://www.verizon.com/about/news/how-americans-are-spending-their-time-temporary-new-normal
+     
+  - id: nokia5
+    type: website
+    publisher: nokia
+    link-citations: true
+    title: "Pandemic Impact on Global Internet Traffic NANOG June 2020"
+    author:
+     - family: Labovitz
+       given: Craig
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 6
+    URL: https://storage.googleapis.com/site-media-prod/meetings/NANOG79/2208/20200601_Labovitz_Effects_Of_Covid-19_v1.pdf
+    
+  - id: PayPal1
+    type: website
+    publisher: "PayPal Holdings, Inc."
+    title: "PayPal Reports Third Quarter 2020 Results"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 11
+       day: 2
+    URL: https://investor.pypl.com/news-and-events/news-details/2020/PayPal-Reports-Third-Quarter-2020-Results/default.aspx
+
