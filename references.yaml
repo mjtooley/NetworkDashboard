@@ -1490,3 +1490,414 @@ references:
       month: 11
       day: 04
     URL: https://gettys.wordpress.com/2020/04/22/bufferbloat-in-action-due-to-covid-19/
+    
+   - id: bbloat1
+    type: website
+    publisher: "Bufferbloat.net: Bufferbloat Project"
+    link-citations: true
+    title: What Can I Do About Bufferbloat?
+    published:
+      year: 2020
+      month: 10
+      day: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/
+
+  - id: bbloat2
+    type: website
+    publisher: "Bufferbloat.net: Bufferbloat Project"
+    link-citations: true
+    title: Bufferbloat Community CoDel Overview
+    published:
+      year: 2020
+      month: 10
+      day: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.bufferbloat.net/projects/codel/wiki/
+
+  - id: openwrt1
+    type: article-journal
+    publisher: OpenWrt Project
+    author:
+    - family: Brown
+      given: Rich
+    link-citations: true
+    title: "OpenWrk: Wireless Freedom; SQM (aka Smart Queue Management)"
+    published:
+      year: 2020
+      month: 11
+      day: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm
+
+  - id: swin1
+    type: website
+    publisher: Swinburne University Centre for Advanced Internet Architecture
+    link-citations: true
+    title: "Swinburne University Centre for Advanced Internet Architecture: Implementing AQM in FreeBSD"
+    published:
+      year: 2016
+      month: 10
+      day: 28
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: http://caia.swin.edu.au/freebsd/aqm/downloads.html 
+
+  - id: ubuntu1
+    publisher: "Canonical: Ubuntu Manpage Repository"
+    link-citations: true
+    title: "UBUNTU Manuals:  CoDel - Controlled-Delay Active Queue Management algorithm"
+    published:
+      year: 2019
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://manpages.ubuntu.com/manpages/bionic/man8/tc-codel.8.html
+
+  - id: linux1
+    type: article-journal
+    publisher: linux.org
+    link-citations: true
+    title: "Linux.org: CoDel - Fair Queuing (FQ) with Controlled Delay (CoDel)"
+    published:
+      year: 2012
+      month: 6
+      day: 4
+      accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.linux.org/docs/man8/tc-fq_codel.html
+
+  - id: eero2
+    type: website
+    publisher: eero Labs, An Amazon Company
+    link-citations: true
+    title: "eero.com: What is eero labs"
+    published:
+      year: 2020
+      month: 10
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://support.eero.com/hc/en-us/articles/360000709886-What-is-eero-Labs-
+
+  - id: cablelabs1
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: ACTIVE QUEUE MANAGEMENT; ALGORITHMS FOR DOCSIS 3.0, A Simulation Study of CoDel, SFQ-CoDel and PIE in DOCSIS 3.0 Networks"
+    published:
+      year: 2020
+      month: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: https://www.cablelabs.com/wp-content/uploads/2014/05/Active_Queue_Management_Algorithms_DOCSIS_3_0.pdf
+
+  - id: cablelabs2
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: Network Technologies; ACTIVE QUEUE MANAGEMENT IN DOCSIS 3.X CABLE MODEMS"
+    published:
+      year: 2020
+      month: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www-res.cablelabs.com/wp-content/uploads/2019/02/28094021/DOCSIS-AQM_May2014.pdf
+
+  - id: cablelabs3
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: Low Latency DOCSIS"
+    published:
+      year: 2020
+      month: 6
+      day: 24
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: https://www.cablelabs.com/technologies/low-latency-docsis
+
+  - id: cablelabs4
+    type: article-journal
+    link-citations: true
+    title: "CableLabs: Low Latency DOCSIS"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.cablelabs.com/technologies/low-latency-docsis
+     
+  - id: vz1
+    type: website
+    publisher: Verizon
+    link-citations: true
+    title: "Verizon delivers network reliability during COVID-19 while accelerating 5G deployments"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 6
+       day: 11
+    URL: https://www.verizon.com/about/news/how-americans-are-spending-their-time-temporary-new-normal
+     
+  - id: nokia5
+    type: website
+    publisher: nokia
+    link-citations: true
+    title: "Pandemic Impact on Global Internet Traffic NANOG June 2020"
+    author:
+     - family: Labovitz
+       given: Craig
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 6
+    URL: https://storage.googleapis.com/site-media-prod/meetings/NANOG79/2208/20200601_Labovitz_Effects_Of_Covid-19_v1.pdf
+    
+  - id: PayPal1
+    type: website
+    publisher: "PayPal Holdings, Inc."
+    title: "PayPal Reports Third Quarter 2020 Results"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 11
+       day: 2
+    URL: https://investor.pypl.com/news-and-events/news-details/2020/PayPal-Reports-Third-Quarter-2020-Results/default.aspx
+
+  - id: fcc8
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: Home Network Tips for the Coronavirus Pandemic
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 7
+    URL: https://www.fcc.gov/home-network-tips-coronavirus-pandemic 
+    
+  - id: fcc9
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: Keep Americans Connected Pledge
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 7
+    URL: https://www.fcc.gov/keep-americans-connected 
+    
+  - id: cica1
+    type: website
+    publisher: Cybersecurity and Infrastructure Security Agency (CISA) 
+    link-citations: true
+    title: "Memorandum on Identification of Essential Critical Infrastructure Workers During COVID-19 Response" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 3
+    URL: https://www.cisa.gov/sites/default/files/publications/CISA-Guidance-on-Essential-Critical-Infrastructure-Workers-1-20-508c.pdf 
+    
+  - id: ifc20
+    type: article-journal
+    publisher: "IFC- International Finance Corporation, World Bank Group" 
+    link-citations: true
+    title: "COVID-19’s Impact on the Global Telecommunications Industry" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 5
+    URL: https://www.ifc.org/wps/wcm/connect/1d490aec-4d57-4cbf-82b3-d6842eecd9b2/IFC-Covid19-Telecommunications_final_web_2.pdf?MOD=AJPERES&CVID=n9nxogP
+    
+  - id: erate1
+    type: website
+    publisher: Colorado Office of the Attorney General
+    link-citations: true
+    title: "In the Matter of: Modernizing the E-rate Program for Schools and Libraries" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 9
+    URL: https://coag.gov/app/uploads/2020/09/State-of-Colorado-Emergency-E-Rate-Waiver-Petition-9.2.2020.pdf
+    
+  - id: erate2
+    type: website
+    publisher: Federal Communications Commission
+    link-citations: true
+    title: "E-Rate - Schools & Libraries USF Program" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 11
+    URL: https://www.fcc.gov/general/e-rate-schools-libraries-usf-program
+    
+  - id: fastly4
+    type: website
+    publisher: fastly
+    author:
+    - family: Iyengar
+      given: Jana
+    - family: Bergman
+      given: Artur
+    link-citations: true
+    title: "Decoding the digital divide" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 4
+       day: 29
+    URL: https://www.fastly.com/blog/digital-divide
+
+  - id: caida
+    type: article-journal
+    link-citations: true
+    author:
+    - family: Dhamdhere
+      given: Amogh
+    - family: Clark
+      given: David
+    - family: Gamero-Garrido
+      given: Alexander
+    - family: Luckie
+      given: Matthew
+    - family: Mok
+      given: Ricky
+    - family: Akiwate
+      given: Gautam
+    - family: Gogia
+      given: Kabir
+    - family: Bajpai
+      given: Vaibhav
+    - family: Snoeren
+      given: Alex
+    - family: claffy
+      given: kc
+    title: Inferring Persistent Interdomain Congestion
+    publisher: ACM
+    issued:
+       year: 2018
+       month: 8
+       day: 20       
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL: https://doi.org/10.1145/3230543.3230549
+
+  - id: cloud1
+    type: website
+    publisher: cloudflare
+    author:
+    - family: Graham-Cumming
+      given: John
+    link-citations: true
+    title: "COVID-19 impacts on Internet traffic: Seattle, Northern Italy and South Korea"
+    published:
+      year: 2020
+      month: 3
+      day: 13
+    accessed:
+      year: 2020
+      month: 11
+      day: 10
+    URL: https://blog.cloudflare.com/covid-19-impacts-on-internet-traffic-seattle-italy-and-south-korea/
+    
+  - id: fastly1
+    type: website
+    publisher: fastly
+    author:
+    - family: Bergman
+      given: Artur
+    - family: Iyengar
+      given: Jana
+    link-citations: true
+    title: "How COVID-19 is affecting internet performance"
+    published:
+      year: 2020
+      month: 4
+      day: 8
+    accessed:
+      year: 2020
+      month: 11
+      day: 10
+    URL: https://www.fastly.com/blog/how-covid-19-is-affecting-internet-performance
+
+  - id: wifiorg1
+    type: website
+    publisher: wifi alliance
+    link-citations: true
+    title: "Discover Wi-Fi: Wi-Fi Certified 6"
+    published:
+      year: 2020
+      month: 4
+      day: 8
+    accessed:
+      year: 2020
+      month: 11
+      day: 10
+    URL: https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-6
+    
+  - id: noction1
+    type: website
+    publisher: noction
+    link-citations: true
+    title: "Updated: The Internet Backbone Networks Performance during the COVID-19 pandemic"
+    published:
+      year: 2020
+      month: 4
+      day: 6
+    accessed:
+      year: 2020
+      month: 11
+      day: 09
+    URL: https://www.noction.com/blog/internet-backbone-networks-performance-covid-19-pandemic
