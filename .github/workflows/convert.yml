@@ -23,6 +23,10 @@ jobs:
       - uses: docker://pandoc/latex
         with:
           args: --defaults=defaults.yaml -V geometry:margin=1in --citeproc --bibliography=references.yaml  --output=output/test.pdf ${{ env.FILELIST }}
+      # Generate PDF with IEEE template and CSL
+      - uses: docker://pandoc/latex
+        with:
+          args: --bibliography=bibliography.bib --csl=bibliography.csl -s -f markdown --template=template.latex --output=output/ieee_paper.pdf test2.md metadata.yaml ${{env.FILELIST }}
       - uses: docker://pandoc/latex
         with:
           args: --defaults=defaults.yaml --citeproc --bibliography=references.yaml  --output=output/test.html ${{ env.FILELIST }}
