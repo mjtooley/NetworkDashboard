@@ -17,10 +17,13 @@ references:
       month: 9
       day: 27
     URL: https://acaconnects.org/covid-19/broadband-dashboard/
-    
+
   - id: ncta1
     type: website
     publisher: NCTA - The Internet & Television Association
+    author:
+    - family: Labovitz
+      given: Craig
     link-citations: true
     title: "COVID-19: How Cable's Internet Networks Are Performing: METRICS, TRENDS & OBSERVATIONS"
     published:
@@ -64,7 +67,7 @@ references:
       year: 2020
       month: 11
       day: 29
-    URL: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline
+    URL: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline 
     
   - id: wp1
     type: article-journal
@@ -499,7 +502,7 @@ references:
       month: 11
       day: 30
     URL: http://dx.doi.org/10.1145/2504730.2504741
-    
+   
   - id: Labovitz1
     type: article-journal
     publisher: nokia
@@ -990,7 +993,7 @@ references:
       month: 11
       day: 3
     URL:  https://investors.zoom.us/news-releases/news-release-details/zoom-reports-first-quarter-results-fiscal-year-2021
-    
+   
   - id: apps1
     type: article-journal
     link-citations: true
@@ -1490,7 +1493,7 @@ references:
       month: 11
       day: 04
     URL: https://gettys.wordpress.com/2020/04/22/bufferbloat-in-action-due-to-covid-19/
-    
+     
   - id: bbloat1
     type: website
     publisher: "Bufferbloat.net: Bufferbloat Project"
@@ -1520,7 +1523,7 @@ references:
        month: 11
        day: 04
     URL: https://www.bufferbloat.net/projects/codel/wiki/
-    
+
   - id: openwrt1
     type: article-journal
     publisher: OpenWrt Project
@@ -1580,7 +1583,7 @@ references:
        month: 11
        day: 04
     URL: https://www.linux.org/docs/man8/tc-fq_codel.html
-    
+
   - id: eero2
     type: website
     publisher: eero Labs, An Amazon Company
@@ -1594,7 +1597,6 @@ references:
        month: 11
        day: 04
     URL: https://support.eero.com/hc/en-us/articles/360000709886-What-is-eero-Labs-
-    
 
   - id: cablelabs1
     type: article-journal
@@ -1750,62 +1752,108 @@ references:
        year: 2020
        month: 5
     URL: https://www.ifc.org/wps/wcm/connect/1d490aec-4d57-4cbf-82b3-d6842eecd9b2/IFC-Covid19-Telecommunications_final_web_2.pdf?MOD=AJPERES&CVID=n9nxogP
+    
+  - id: erate1
+    type: website
+    publisher: Colorado Office of the Attorney General
+    link-citations: true
+    title: "In the Matter of: Modernizing the E-rate Program for Schools and Libraries" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 9
+    URL: https://coag.gov/app/uploads/2020/09/State-of-Colorado-Emergency-E-Rate-Waiver-Petition-9.2.2020.pdf
+    
+  - id: erate2
+    type: website
+    publisher: Federal Communications Commission
+    link-citations: true
+    title: "E-Rate - Schools & Libraries USF Program" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 11
+    URL: https://www.fcc.gov/general/e-rate-schools-libraries-usf-program
+    
+  - id: fastly4
+    type: website
+    publisher: fastly
+    author:
+    - family: Iyengar
+      given: Jana
+    - family: Bergman
+      given: Artur
+    link-citations: true
+    title: "Decoding the digital divide" 
+    accessed:
+       year: 2020
+       month: 11
+       day: 11
+    issued:
+       year: 2020
+       month: 4
+       day: 29
+    URL: https://www.fastly.com/blog/digital-divide
 
-  - id: fcc8
-    type: website
-    publisher: Federal Communications Commission 
-    link-citations: true
-    title: Home Network Tips for the Coronavirus Pandemic
-    accessed:
-       year: 2020
-       month: 11
-       day: 11
-    issued:
-       year: 2020
-       month: 7
-    URL: https://www.fcc.gov/home-network-tips-coronavirus-pandemic 
-    
-  - id: fcc9
-    type: website
-    publisher: Federal Communications Commission 
-    link-citations: true
-    title: Keep Americans Connected Pledge
-    accessed:
-       year: 2020
-       month: 11
-       day: 11
-    issued:
-       year: 2020
-       month: 7
-    URL: https://www.fcc.gov/keep-americans-connected 
-    
-  - id: cica1
-    type: website
-    publisher: Cybersecurity and Infrastructure Security Agency (CISA) 
-    link-citations: true
-    title: "Memorandum on Identification of Essential Critical Infrastructure Workers During COVID-19 Response" 
-    accessed:
-       year: 2020
-       month: 11
-       day: 11
-    issued:
-       year: 2020
-       month: 3
-    URL: https://www.cisa.gov/sites/default/files/publications/CISA-Guidance-on-Essential-Critical-Infrastructure-Workers-1-20-508c.pdf 
-    
-  - id: ifc20
+  - id: caida
     type: article-journal
-    publisher: "IFC- International Finance Corporation, World Bank Group" 
     link-citations: true
-    title: "COVID-19’s Impact on the Global Telecommunications Industry" 
-    accessed:
+    author:
+    - family: Dhamdhere
+      given: Amogh
+    - family: Clark
+      given: David
+    - family: Gamero-Garrido
+      given: Alexander
+    - family: Luckie
+      given: Matthew
+    - family: Mok
+      given: Ricky
+    - family: Akiwate
+      given: Gautam
+    - family: Gogia
+      given: Kabir
+    - family: Bajpai
+      given: Vaibhav
+    - family: Snoeren
+      given: Alex
+    - family: claffy
+      given: kc
+    title: Inferring Persistent Interdomain Congestion
+    publisher: ACM
+    issued:
+       year: 2018
+       month: 8
+       day: 20       
+    accessed: 
        year: 2020
        month: 11
-       day: 11
-    issued:
-       year: 2020
-       month: 5
-    URL: https://www.ifc.org/wps/wcm/connect/1d490aec-4d57-4cbf-82b3-d6842eecd9b2/IFC-Covid19-Telecommunications_final_web_2.pdf?MOD=AJPERES&CVID=n9nxogP
+       day: 4
+    URL: https://doi.org/10.1145/3230543.3230549
+
+  - id: cloud1
+    type: website
+    publisher: cloudflare
+    author:
+    - family: Graham-Cumming
+      given: John
+    link-citations: true
+    title: "COVID-19 impacts on Internet traffic: Seattle, Northern Italy and South Korea"
+    published:
+      year: 2020
+      month: 3
+      day: 13
+    accessed:
+      year: 2020
+      month: 11
+      day: 10
+    URL: https://blog.cloudflare.com/covid-19-impacts-on-internet-traffic-seattle-italy-and-south-korea/
     
   - id: fastly1
     type: website
