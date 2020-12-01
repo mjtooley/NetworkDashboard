@@ -1520,36 +1520,3 @@ references:
        month: 11
        day: 04
     URL: https://www.bufferbloat.net/projects/codel/wiki/
-
-  - id: openwrt1
-    type: article-journal
-    publisher: OpenWrt Project
-    author:
-    - family: Brown
-      given: Rich
-    link-citations: true
-    title: "OpenWrk: Wireless Freedom; SQM (aka Smart Queue Management)"
-    published:
-      year: 2020
-      month: 11
-      day: 5
-    accessed:
-       year: 2020
-       month: 11
-       day: 04
-    URL: https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm
-
-  - id: swin1
-    type: website
-    publisher: Swinburne University Centre for Advanced Internet Architecture
-    link-citations: true
-    title: "Swinburne University Centre for Advanced Internet Architecture: Implementing AQM in FreeBSD"
-    published:
-      year: 2016
-      month: 10
-      day: 28
-    accessed:
-       year: 2020
-       month: 11
-       day: 29
-    URL: http://caia.swin.edu.au/freebsd/aqm/downloads.html 
