@@ -17,3 +17,1493 @@ references:
       month: 9
       day: 27
     URL: https://acaconnects.org/covid-19/broadband-dashboard/
+    
+  - id: ncta1
+    type: website
+    publisher: NCTA - The Internet & Television Association
+    link-citations: true
+    title: "COVID-19: How Cable's Internet Networks Are Performing: METRICS, TRENDS & OBSERVATIONS"
+    published:
+      year: 2020
+      month: 3
+      day: 27
+    accessed:
+      year: 2020
+      month: 11
+      day: 27
+    URL: https://www.ncta.com/COVIDdashboard
+    
+  - id: preseem1
+    type: website
+    publisher: "preseem: Network Telemetry and Insights"
+    author:
+    - family: Singh
+      given: Harneet
+    link-citations: true
+    title: "COVID-19 and the Impact on Fixed Wireless Internet Networks: California Vs. Texas"
+    published:
+      year: 2020
+      month: 3
+      day: 27
+    accessed:
+      year: 2020
+      month: 9
+      day: 27
+    URL: https://preseem.com/2020/03/covid-19-impact-internet-networks-california-texas/
+    
+  - id: who1
+    type: article-journal
+    publisher: World Health Organization 
+    link-citations: true
+    title: "WHO's COVID-19 response"
+    published:
+      year: 2020
+      month: 9
+      day: 10
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/interactive-timeline 
+    
+  - id: wp1
+    type: article-journal
+    publisher: The Washington Post
+    author:
+    - family: Timberg
+      given: Craig
+    link-citations: true
+    title: "Your Internet is working. Thank these Cold War-era pioneers who designed it to handle almost anything"
+    published:
+      year: 2020
+      month: 4
+      day: 6
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.washingtonpost.com/technology/2020/04/06/your-internet-is-working-thank-these-cold-war-era-pioneers-who-designed-it-handle-almost-anything/
+          
+  - id: nokia1
+    type: article-journal
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Early effects of COVID-19 lockdowns on service provider networks: the networks soldier on!"
+    published:
+      year: 2020
+      month: 3
+      day: 27
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/early-effects-covid-19-lockdowns-service-provider-networks-networks-soldier/
+        
+  - id: nokia2
+    type: website
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Network traffic insights in the time of COVID-19: March 16-March 22 update"
+    published:
+      year: 2020
+      month: 3
+      day: 27
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/network-traffic-insights-time-covid-19-march-16-march-22-update/
+        
+  - id: nokia3
+    type: website
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Network traffic insights in the time of COVID-19: March 23-29 update"
+    published:
+      year: 2020
+      month: 4
+      day: 2
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/network-traffic-insights-time-covid-19-march-23-29-update/
+        
+  - id: nokia4
+    type: article-journal
+    publisher: nokia
+    author:
+    - family: Labovitz
+      given: Craig
+    link-citations: true
+    title: "Network traffic insights in the time of COVID-19: April 9 update"
+    published:
+      year: 2020
+      month: 4
+      day: 9
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nokia.com/blog/network-traffic-insights-time-covid-19-april-9-update/
+        
+  - id: verge1
+    type: article-journal
+    publisher: The Verge
+    author:
+    - family: Chin
+      given: Monica
+    link-citations: true
+    title: "The pandemic has made it harder to buy a new laptop"
+    published:
+      year: 2020
+      month: 6
+      day: 4
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.theverge.com/2020/6/4/21279633/laptop-pc-shortages-supply-chain-coronavirus-covid-19-pandemic
+        
+  - id: nytimes1
+    type: article-journal
+    publisher: The New York Times
+    author:
+    - family: Browning
+      given: Kellen
+    link-citations: true
+    title: "The Digital Divide Starts With a Laptop Shortage"
+    published:
+      year: 2020
+      month: 10
+      day: 12
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nytimes.com/2020/10/12/technology/laptops-schools-digital-divide.html
+        
+  - id: edweek1
+    type: article-journal
+    publisher: Education Week
+    author:
+    - family: Rauf
+      given: David Saleh
+    link-citations: true
+    title: "Coronavirus Squeezes Supply of Chromebooks, iPads, and Other Digital Learning Devices"
+    published:
+      year: 2020
+      month: 4
+      day: 16
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.edweek.org/ew/articles/2020/04/01/coronavirus-squeezes-supply-of-chromebooks-ipads-and.html
+        
+  - id: cnbc1
+    type: article-journal
+    publisher: "CNBC@Work Spotlight"
+    author:
+    - family: Novet
+      given: Jordan
+    link-citations: true
+    title: "The PC is suddenly cool again ... for now"
+    published:
+      year: 2020
+      month: 5
+      day: 4
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.cnbc.com/2020/05/04/pc-sales-usage-rise-during-coronavirus-lockdown.html
+        
+  - id: qz1
+    type: article-journal
+    publisher: quartz
+    author:
+    - family: Ho
+      given: Karen
+    link-citations: true
+    title: "US computer sales spiked in the rush to work from home"
+    published:
+      year: 2020
+      month: 7
+      day: 29
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://qz.com/1881730/us-computer-sales-spiked-67-percent-after-switch-to-remote-work/
+        
+  - id: fcc1
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: "Keep Americans Connected"
+    published:
+      year: 2020
+      month: 7
+      day: 8
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.fcc.gov/keep-americans-connected
+        
+  - id: fcc2
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: "Companies Have Gone Above and Beyond the Call to Keep Americans Connected During Pandemic"
+    published:
+      year: 2020
+      month: 10
+      day: 14
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.fcc.gov/companies-have-gone-above-and-beyond-call-keep-americans-connected-during-pandemic
+        
+  - id: ctia1
+    type: article-journal
+    publisher: CTIA – The Wireless Association
+    link-citations: true
+    title: "How Wireless Kept Americans Connected During COVID-19"
+    published:
+      year: 2020
+      month: 6
+      day: 23
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.ctia.org/news/report-how-wireless-kept-americans-connected-during-covid-19
+    
+  - id: ctia2
+    type: website
+    publisher: CTIA – The Wireless Association
+    link-citations: true
+    title: "The Wireless Industry Responds to COVID-19"
+    published:
+      year: 2020
+      month: 10
+      day: 23
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    locator: Network Performance
+    lablel: Heading
+    URL: https://www.ctia.org/homepage/covid-19
+    
+  - id: ustel1
+    type: website
+    publisher: "USTelecom: The Broadband Association"
+    link-citations: true
+    title: "Network Performance"
+    published:
+      year: 2020
+      month: 7
+      day: 21
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.ustelecom.org/research/network-performance-data/#
+        
+  - id: ncta2
+    type: article-journal
+    publisher: "NCTA - The Internet & Television Association"
+    link-citations: true
+    title: "Supporting America's Schools During COVID-19"
+    published:
+      year: 2020
+      month: 5
+      day: 8
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.ncta.com/whats-new/supporting-americas-schools-during-covid-19
+        
+  - id: ncta3
+    type: article-journal
+    publisher: "NCTA - The Internet & Television Association"
+    link-citations: true
+    title: "Distance Learning"
+    published:
+      year: 2020
+      month: 9
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.ncta.com/positions/distance-learning
+    
+  - id: scte1 
+    publisher: SCTE-ISBE 
+    Conference Title: "2020 Fall Technical Forum: SCTE-ISBE, NCTA, CABLELabs"
+    author:
+    - family: Ulm
+      given: John
+    - family: Cloonan
+      given: Thomas
+    link-citations: true
+    title: "Managing the Coronavirus Bandwidth Surge: How to Cope with Spikes and Long-term Growth"
+    published:
+      year: 2020
+      month: 10
+      day: 12
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.nctatechnicalpapers.com/Paper/2020/2020-managing-the-coronavirus-bandwidth-surge
+    
+  - id: scte2 
+    type: article-journal
+   publisher: SCTE-ISBE 
+    Conference Title: "2020 Fall Technical Forum: SCTE-ISBE, NCTA, CABLELabs"
+    author:
+    - family: Barker Jr.
+      given: Bruce E.
+    - family: Bou Abboud
+      given: Claude
+    - family: Neeld
+      given: Erik
+    link-citations: true
+    title: "Access Capacity Planning: Staying Well Ahead of Customer Demand Helped Ensure Stability During COVID-19"
+    published:
+      year: 2020
+      month: 10
+      day: 12
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.nctatechnicalpapers.com/Paper/2020/2020-access-capacity-planning
+
+  - id: openvault 
+    type: webpage
+    link-citations: true
+    title: "COVID-19 BROADBAND USAGE “REACHING A PLATEAU,” SAYS OPENVAULT"
+    issued:
+      year: 2020
+      month: 4
+      day: 7
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    publisher: Openvault
+    URL: https://openvault.com/covid-19-broadband-usage-reaching-a-plateau-says-openvault/
+    
+  - id: scte3 
+    type: article-journal
+    publisher: SCTE-ISBE 
+    Conference Title: "2019 Fall Technical Forum: SCTE-ISBE, NCTA, CABLELabs"
+    link-citations: true
+    title: "The Broadband Network Evolution Continues - How Do We Get to Cable 10G?"
+    author: 
+    - family: Ulm
+      given: John
+    - family: Cloonan
+      given: Tom
+    locator: 10
+    label: page
+    issued:
+      year: 2019
+      month: 9
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.nctatechnicalpapers.com/Paper/2019/2019-the-broadband-network-evolution-continues
+ 
+  - id: nytimes2
+    type: article-journal
+    publisher: The New York Times
+    author:
+    - family: Koeze
+      given: Ella
+    - family: Popper
+      given: Nathaniel
+    link-citations: true
+    title: "The Virus Changed the Way We Internet"
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.nytimes.com/interactive/2020/04/07/technology/coronavirus-internet-use.htmll  
+    
+  - id: feamster2
+    type: article-journal
+    publisher: Association for Computing Machineary (ACM) Digital Library
+    publication: Proceedings of the ACM on Measurement and Analysis of Computing Systems December 2019 Article No. 56 
+    author:
+    - family: Bronzino
+      given: Francesco
+    - family: Schmitt
+      given: Paul
+    - family: Ayoubi
+      given: Sara
+    - family: Martins
+      given: Guilherme
+    - family: Teixeira
+      given: Renata
+    - family: Feamster
+      given: Nick
+    link-citations: true
+    title: "Inferrring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience"
+    published:
+      year: 2019
+      month: 12
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://doi.org/10.1145/3366704   
+
+  - id: feamster1
+    type: article-journal
+    publisher: Association for Computing Machineary (ACM) Digital Library
+    publication: "IMC '13: Proceedings of the 2013 conference on Internet measurement conferenceOctober 2013 Pages 213–226"
+    author:
+    - family: Sundaresan
+      given: Srikanth
+    - family: Feamster
+      given: Nick
+    - family: Teixeira
+      given: Renata
+    - family: Magharei
+      given: Nazanin
+    link-citations: true
+    title: "Measuring and Mitigating Web Performance Bottlenecks in Broadband Access Networks"
+    published:
+      year: 2013
+      month: 10
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: http://dx.doi.org/10.1145/2504730.2504741
+   
+  - id: Labovitz1
+    type: article-journal
+    link-citations: true
+    title: "Internet Traffic 2009-2019"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://pc.nanog.org/static/published/meetings/NANOG76/1972/20190610_Labovitz_Internet_Traffic_2009-2019_v1.pdf
+
+  - id: akamai1
+    publisher: Akamai
+    author:
+    - family: Leighton
+      given: Tom
+    link-citations: true
+    title: "Working Together to Manage Global Internet Traffic Increases"
+    published:
+      year: 2020
+      month: 3
+      day: 24
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://blogs.akamai.com/2020/03/working-together-to-manage-global-internet-traffic-increases.html
+
+  - id: pk1
+    type: article-journal
+    publisher: Public Knowledge
+    //author:
+    - family: Harris
+      given: Dallas
+    link-citations: true
+    title: "The FCC and Automakers Must Save Our Wifi"
+    published:
+      year: 2016
+      month: 6
+      day: 27
+    accessed:
+      year: 2020
+      month: 11
+      day: 30
+    URL: https://www.publicknowledge.org/video/the-fcc-and-automakers-must-save-our-wifi/
+   
+  - id: dclark1
+    type: article-journal
+    link-citations: true
+    title: "Measurment of congestion on ISP interconnection links"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.iab.org/wp-content/IAB-uploads/2020/10/covid19-clark.pdf
+   
+  - id: liu1
+    type: article-journal
+    link-citations: true
+    title: "Characterizing Service Provider Response to the COVID-19 Pandemic in the United States"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://datatracker.ietf.org/doc/draft-feamster-livingood-iab-covid19-workshop/
+
+  - id: intro1
+    type: article-journal
+    link-citations: true
+    title: Insert here
+    accessed: 
+      year: 2020
+      month: 9
+      day: 27
+    URL: https://www.pwc.com/us/en/library/covid-19/coronavirus-telecommunication-impact.html
+    
+  - id: wifi32
+    type: article-journal
+    link-citations: true
+    title: List of https://www.plume.com/, https://eero.com/, https://www.ui.com/
+    accessed: 
+      year: 2020
+      month: 10
+      day: 27
+    URL: https://www.tomsguide.com/us/best-wifi-extenders,review-2225.html
+    
+  - id: wifi33
+    type: article-journal
+    link-citations: true
+    title: Your COVID-19 Internet problems might be COVID-19 Wi-Fi problems
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://arstechnica.com/gadgets/2020/04/remote-work-lagging-if-you-cant-plug-it-in-upgrade-to-mesh/
+    
+  - id: wifi34
+    type: article-journal
+    link-citations: true
+    title: "Wi-Fi 6: is it really that much faster?"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.theverge.com/2019/2/21/18232026/wi-fi-6-speed-explained-router-wifi-how-does-work
+    
+  - id: entn1
+    type: article-journal
+    link-citations: true
+    title: Coronavirus challenges remote networking
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.networkworld.com/article/3532440/coronavirus-challenges-remote-networking.html
+    
+  - id: entn2
+    type: article-journal
+    link-citations: true
+    title: How the Coronavirus Lockdown Is Changing the VPN Landscape
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://securityboulevard.com/2020/05/how-the-coronavirus-lockdown-is-changing-the-vpn-landscape/
+    
+  - id: entn3
+    type: article-journal
+    link-citations: true
+    title: The Virus Changed the Way We Internet
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.nytimes.com/interactive/2020/04/07/technology/coronavirus-internet-use.html
+    
+  - id: entn4
+    type: article-journal
+    link-citations: true
+    title: Wikipedia entry on Split Tunneling
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://en.wikipedia.org/wiki/Split_tunneling
+    
+  - id: cisco1
+    type: article-journal
+    link-citations: true
+    title: "Cisco Webex: Supporting customers during this unprecedented time"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://blog.webex.com/video-conferencing/cisco-webex-supporting-customers-during-this-unprecedented-time/
+    
+  - id: cisco2
+    type: article-journal
+    link-citations: true
+    title: "WebEx Scaling During Covid"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.iab.org/wp-content/IAB-uploads/2020/10/covid19-jennings.pdf
+    
+  - id: zoom1
+    type: article-journal
+    link-citations: true
+    title: "Zoom’s Commitment to User Support & Business Continuity During the Coronavirus Outbreak"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://blog.zoom.us/zoom-commitment-user-support-business-continuity-during-coronavirus-outbreak/
+    
+  - id: zoom2
+    type: article-journal
+    link-citations: true
+    title: "Exclusive: Zoom CEO Eric Yuan Is Giving K-12 Schools His Videoconferencing Tools For Free"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.forbes.com/sites/alexkonrad/2020/03/13/zoom-video-coronavirus-eric-yuan-schools/
+    
+  - id: zoom3
+    type: article-journal
+    link-citations: true
+    title: "Exclusive: Zoom CEO Eric Yuan Is Giving K-12 Schools His Videoconferencing Tools For Free"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.theverge.com/2020/6/2/21277006/zoom-q1-2021-earnings-coronavirus-pandemic-work-from-home
+    
+  - id: zoom4
+    type: article-journal
+    link-citations: true
+    title: "Exclusive: Zoom CEO Eric Yuan Is Giving K-12 Schools His Videoconferencing Tools For Free"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.theverge.com/2020/6/2/21277006/zoom-q1-2021-earnings-coronavirus-pandemic-work-from-home
+
+  - id: nanog1
+    type: article-journal
+    link-citations: true
+    title: "Networks' responses to COVID-19"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.youtube.com/watch?v=aolGV9eBwro&feature=youtu.be
+    
+  - id: netflix1
+    type: article-journal
+    link-citations: true
+    title: "Netflix agrees to reduce streaming bit rates to Europe"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://www.zdnet.com/article/netflix-agrees-to-reduce-streaming-quality-to-europe/
+    
+  - id: fb1
+    type: article-journal
+    link-citations: true
+    title: "How the Internet Reacted to Covid-19: A Perspective from Facebook's Edge Network"
+    author:
+    - family: Bottger
+      given: Timm
+    - family: Ibrahim
+      given: Ghida
+    - family: Vallis
+      given: Ben
+    isbn: 9781450381383
+    doi: 10.1145/3419394.3423621
+    locator: 34-41
+    label: pages
+    location: Virtual Event, USA
+    series: IMC '20
+    issued:
+      year: 2020
+      month: 10
+      day: 27
+    accessed: 
+      year: 2020
+      month: 11
+      day: 2
+    URL: https://doi.org/10.1145/3419394.3423621   
+    publisher: Association for Computing Machinery
+    address: New York, NY, USA
+
+
+  - id: zoom1
+    type: article-journal
+    link-citations: true
+    title: Zoom’s Commitment to User Support & Business Continuity During the Coronavirus Outbreak
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://blog.zoom.us/zoom-commitment-user-support-business-continuity-during-coronavirus-outbreak
+    
+  - id: zoom2
+    type: article-journal
+    link-citations: true
+    title: Zoom’s Commitment to User Support & Business Continuity During the Coronavirus Outbreak
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.forbes.com/sites/alexkonrad/2020/03/13/zoom-video-coronavirus-eric-yuan-schools/?sh=40a24714e71
+   
+  - id: zoom3
+    type: article-journal
+    link-citations: true
+    title: Zoom saw a huge increase in subscribers — and revenue — thanks to the pandemic
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.theverge.com/2020/6/2/21277006/zoom-q1-2021-earnings-coronavirus-pandemic-work-from-home
+   
+  - id: msf1
+    type: article-journal
+    link-citations: true
+    title: Learning from our customers in Italy
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/08/learning-from-customers-italy/
+   
+  - id: zoom4
+    type: article-journal
+    link-citations: true
+    title: Zoom Reports First Quarter Results for Fiscal Year 2021
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://investors.zoom.us/news-releases/news-release-details/zoom-reports-first-quarter-results-fiscal-year-2021
+   
+  - id: apps1
+    type: article-journal
+    link-citations: true
+    title: "Verizon: COVID-19 Network Traffic Trends Highlight Stay at Home Impact as Mobile Handoffs are Down 29%"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.telecompetitor.com/verizon-covid-19-network-traffic-trends-highlight-stay-at-home-impact-as-mobile-handoffs-are-down-29/
+   
+  - id: bus1
+    type: article-journal
+    link-citations: true
+    title: What Marketers Need to Know About People's Social Media Patterns During the Pandemic
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.business.com/articles/social-media-patterns-during-the-pandemic/
+   
+  - id: nyt1
+    type: article-journal
+    link-citations: true
+    title: "Facebook Is ‘Just Trying to Keep the Lights On’ as Traffic Soars in Pandemic"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.nytimes.com/2020/03/24/technology/virus-facebook-usage-traffic.html
+   
+  - id: nang1
+    type: article-journal
+    link-citations: true
+    title: Pandemic Impact on Global Internet Traffic, NANOG June 2020
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://storage.googleapis.com/site-media-prod/meetings/NANOG79/2208/20200601_Labovitz_Effects_Of_Covid-19_v1.pdf
+   
+  - id: csc1
+    type: article-journal
+    link-citations: true
+    title: "Cisco Webex: Supporting customers during this unprecedented time"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://blog.webex.com/video-conferencing/cisco-webex-supporting-customers-during-this-unprecedented-time/
+   
+  - id: csc2
+    type: article-journal
+    link-citations: true
+    title: 10 lessons that helped scale Webex during a global crisis
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://blog.webex.com/engineering/10-lessons-that-helped-scale-webex-during-a-global-crisis/
+   
+  - id: cnb1
+    type: article-journal
+    link-citations: true
+    title: "Cisco CEO: Customers spent 5.5 billion minutes in virtual meetings this month due to coronavirus"
+    accessed: 
+      year: 2020
+      month: 11
+      day: 3
+    URL:  https://www.cnbc.com/2020/03/17/cisco-ceo-says-5point5-billion-minutes-of-webex-meetings-due-to-coronavirus.html
+   
+  - id: comcast1
+    type: article-journal
+    link-citations: true
+    title: NetForecast's Report on Comcast's Network Performance Measurement System Results Data
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.netforecast.com/netforecasts-report-on-comcasts-network-performance-measurement-system-results-data/
+
+  - id: comcast2
+    type: article-journal
+    link-citations: true
+    title: NetForecast Design Audit Report of Comcast's Network Performance Measurement System
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.netforecast.com/netforecast-design-audit-report-of-comcasts-network-performance-measurement-system/
+   
+  - id: comcast3
+    type: article-journal
+    link-citations: true
+    title: Comcast Extends 60-Days of Free Internet Service to New Internet Essentials Customers
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://corporate.comcast.com/press/releases/comcast-extends-free-internet-service-new-internet-essentials-customers
+   
+  - id: att1
+    type: article-journal
+    link-citations: true
+    title: "COVID-19: Network Archive"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://about.att.com/pages/COVID-19/network_archives.html
+   
+  - id: att2
+    type: article-journal
+    link-citations: true
+    title: "The System That Actually Worked: How the internet kept running even as society closed down around it"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://www.theatlantic.com/ideas/archive/2020/05/miracle-internet-not-breaking/611212/
+   
+  - id: att3
+    type: article-journal
+    link-citations: true
+    title: "6 Months In: Unyielding Connections in the Age of COVID-19"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://about.att.com/innovationblog/2020/09/fn_covid_19_six_months.html
+    
+  - id: lumen1
+    type: article-journal
+    link-citations: true
+    title: We're Online More Than Ever Right Now. Can the Internet Itself Keep Up?
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://time.com/5810991/internet-coronavirus/
+   
+  - id: lumen2
+    type: article-journal
+    link-citations: true
+    title: "A new type of crisis: What happens to a network when we unexpectedly have to stay at home?"
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://news.lumen.com/index.php?s=34146&item=30584
+   
+  - id: verizon1
+    type: article-journal
+    link-citations: true
+    title: Verizon delivers network reliability during COVID-19 while accelerating 5G deployments
+    accessed:
+      year: 2020
+      month: 11
+      day: 03
+    URL: https://www.verizon.com/about/news/how-americans-are-spending-their-time-temporary-new-normal
+   
+  - id: tmobile1
+    type: article-journal
+    link-citations: true
+    title: Keeping Customers Connected 24/7
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://www.t-mobile.com/news/network/keeping-customers-connected-24-7
+   
+  - id: charter1
+    type: article-journal
+    link-citations: true
+    title: Charter Announces First Quarter 2020 Results
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://ir.charter.com/news-releases/news-release-details/charter-announces-first-quarter-2020-results
+   
+  - id: wsj1
+    type: article-journal
+    link-citations: true
+    title: Apple’s Sales Rise in Pandemic, but Pressure Remains for Breakout Holiday Season
+    publisher: Wall Street Journal
+    published:
+      year: 2020
+      month: 10
+      day: 29
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://www.wsj.com/articles/apple-aapl-4q-earnings-report-2020-11604003762
+   
+  - id: arstech1 
+    type: website
+    link-citations: true
+    title: Your COVID-19 Internet problems might be COVID-19 Wi-Fi problems
+    publisher: Arstechnica
+    published:
+      year: 2020
+      month: 4
+      day: 14
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL: https://arstechnica.com/gadgets/2020/04/remote-work-lagging-if-you-cant-plug-it-in-upgrade-to-mesh/
+
+  - id: verge4 
+    type: website
+    link-citations: true
+    title: "Wi-Fi 6: is it really that much faster?"
+    publisher: Verge
+    published:
+      year: 2020
+      month: 4
+      day: 14
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://www.theverge.com/2019/2/21/18232026/wi-fi-6-speed-explained-router-wifi-how-does-work
+   
+  - id: plume1 
+    type: website
+    link-citations: true
+    title: Plume
+    publisher: Plume
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://www.plume.com
+   
+  - id: eero1
+    type: website
+    link-citations: true
+    title: Eero
+    publisher: Eero
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://www.eero.com
+   
+  - id: ubiquiti1 
+    type: website
+    link-citations: true
+    title: UI
+    publisher: UI
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    URL:  https://www.ui.com
+   
+  - id: liu1
+    type: article-journal
+    link-citations: true
+    title: Characterizing Service Provider Response to the COVID-19 Pandemic in the United States
+    publisher: arvix
+    accessed:
+      year: 2020
+      month: 10
+      day: 30
+    issued:
+      year: 2020
+      month: 11
+      day: 2
+    author:
+    - family: Liu
+      given: Shinan
+    - family: Bronzino
+      given: Francesco
+    - family: Feamster
+      given: Nick
+    - family: Schmitt
+      given: Paul
+    URL:  https://arxiv.org/abs/2011.00419
+   
+  - id: verge1
+    type: article-journal
+    link-citations: true
+    title: Netflix is starting to restore normal streaming quality in parts of Europe
+    accessed: 
+      year: 2020
+      month: 11
+      day: 4
+    URL:  https://www.theverge.com/2020/5/15/21259954/netflix-streaming-quality-europe-bitrate-pandemic
+      
+  - id: preseem1
+    type: article-journal
+    link-citations: true
+    title: 
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL:  https://www.preseem.com/2020/03/covid-19-impact-internet-networks-california-texas/)
+    
+  - id: fontugne1
+    type: article-journal
+    link-citations: true
+    author:
+    - family: Fontugne
+      given: Romain
+    - family: Shah
+      given: Anant
+    - family: Cho
+      given: Kenjiro
+    title: Persistent Last-Mile Congestion Not so Uncommon
+    publisher: Association for Computing Machinery
+    booktitle: Proceedings of the ACM Internet Measurement Conference
+    locator: 420–427
+    label: pages
+    location: Virtual Event, USA
+    series: IMC '20
+    issued:
+       year: 2020       
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    isbn: 9781450381383 
+    URL: https://doi.org/10.1145/3419394.3423648
+    doi: 10.1145/3419394.3423648
+    
+  - id: liu1
+    type: article-journal
+    link-citations: true
+    author:
+    - family: Liu
+      given: Shinan
+    - family: Schmitt
+      given: Pau.
+    - family: Bronzino
+      given: Francesco
+    - family: Feamster
+      given: Nick
+    title: Characterizing Service Provider Response to the COVID-19 Pandemic in the United States
+    publisher: arXiv
+    issued:
+       year: 2020
+       month: 11
+       day: 1       
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL: arXiv:2011.00419
+
+  - id: mba1
+    type: website
+    publisher: Federal Communications Commission 
+    link-citations: true
+    title: Measuring Broadband America
+    published:
+      year: 2020
+      month: 7
+      day: 28
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL: https://www.fcc.gov/general/measuring-broadband-america
+    
+  - id: comcast1
+    type: website
+    publisher: "Comcast: X-finity.com"
+    link-citations: true
+    title: Comcast Extends 60-Days of Free Internet Service to New Internet Essentials Customers
+    issued:
+       year: 2020
+       month: 6
+       day: 18
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL:  https://corporate.comcast.com/press/releases/comcast-extends-free-internet-service-new-internet-essentials-customers
+    
+  - id: comcast2
+    type: website
+    publisher: "Comcast: X-finity.com"
+    link-citations: true
+    title: Comcast COVID-19 Response
+    issued:
+       year: 2020
+       month: 5
+       day: 20
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL:  https://corporate.comcast.com/covid-19/network/may-20-2020
+    
+  - id: netscout1
+    type: website
+    publisher: Netscout
+    author:
+    - family: Bienkowski
+      given: Tom
+    link-citations: true
+    title: COVID-19 Network Traffic Patterns A Worldwide Perspective from Our Customers
+    issued:
+       year: 2020
+       month: 5
+       day: 13
+    accessed: 
+       year: 2020
+       month: 11
+       day: 4
+    URL:  https://www.netscout.com/blog/Network-Traffic-in-the-Age-of-COVID-19
+
+  - id: paypal1
+    type: article-journal
+    publisher: PayPal Holdings, Inc. 
+    link-citations: true
+    title: "PayPal: PayPal Holdings, Inc., Third Quarter 2020 Results"
+    published:
+      year: 2020
+      month: 11
+      day: 2
+    accessed:
+      year: 2020
+      month: 11
+      day: 9
+    URL: https://s1.q4cdn.com/633035571/files/doc_financials/2020/q3/Q3-20-PayPal-Earnings-Release.pdf  
+
+  - id: paypal2
+    type: website
+    publisher: The Motley Fool
+    link-citations: true
+    title: "PayPal Holdings (PYPL) Q3 2020 Earnings Call Transcript: PYPL earnings call for the period ending September 30, 2020"
+    published:
+      year: 2020
+      month: 11
+      day: 3
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.fool.com/earnings/call-transcripts/2020/11/03/paypal-holdings-pypl-q3-2020-earnings-call-transcr/
+
+  - id: cpa1
+    author:
+    - family: Maykuth
+      given: Andrew
+    link-citations: true
+    title: "CPA Practice Advisor: Pandemic is Speeding the Shift to a Cashless Society"
+    issued:
+      year: 2020
+      month: 7
+    published:
+      year: 2020
+      month: 7
+      day: 26
+    accessed:
+      year: 2020
+      month: 11
+      day: 29
+    URL: https://www.cpapracticeadvisor.com/small-business/news/21145003/pandemic-is-speeding-the-shift-to-a-cashless-society   
+    
+  - id: icann1
+    type: article-journal
+    publisher: CircleID
+    link-citations: true
+    title: "ICANN Org's Multifaceted Response to DNS Abuse"
+    author:
+    - family: Marby
+      given: Goran
+    published:
+      year: 2020
+      month: 4
+      day: 22
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: http://www.circleid.com/posts/20200707-evolving-the-internet-through-covid-19-and-beyond/,%20https://gettys.wordpress.com/2020/04/22/bufferbloat-in-action-due-to-covid-19/
+
+  - id: jgblog1
+    publisher: "Jim Gettys at jg's Ramblings"
+    author:
+    - family: Gettys
+      given: Jim
+    link-citations: true
+    title: "jg's Ramblings: Bufferbloat in Action due to Covid-19"
+    published:
+      year: 2020
+      month: 4
+      day: 23
+    accessed:
+      year: 2020
+      month: 11
+      day: 04
+    URL: https://gettys.wordpress.com/2020/04/22/bufferbloat-in-action-due-to-covid-19/
+     
+  - id: bbloat1
+    type: website
+    publisher: "Bufferbloat.net: Bufferbloat Project"
+    link-citations: true
+    title: What Can I Do About Bufferbloat?
+    published:
+      year: 2020
+      month: 10
+      day: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/
+
+  - id: bbloat2
+    type: website
+    publisher: "Bufferbloat.net: Bufferbloat Project"
+    link-citations: true
+    title: Bufferbloat Community CoDel Overview
+    published:
+      year: 2020
+      month: 10
+      day: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.bufferbloat.net/projects/codel/wiki/
+
+  - id: openwrt1
+    type: article-journal
+    publisher: OpenWrt Project
+    author:
+    - family: Brown
+      given: Rich
+    link-citations: true
+    title: "OpenWrk: Wireless Freedom; SQM (aka Smart Queue Management)"
+    published:
+      year: 2020
+      month: 11
+      day: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://openwrt.org/docs/guide-user/network/traffic-shaping/sqm
+
+  - id: swin1
+    type: website
+    publisher: Swinburne University Centre for Advanced Internet Architecture
+    link-citations: true
+    title: "Swinburne University Centre for Advanced Internet Architecture: Implementing AQM in FreeBSD"
+    published:
+      year: 2016
+      month: 10
+      day: 28
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: http://caia.swin.edu.au/freebsd/aqm/downloads.html 
+
+  - id: ubuntu1
+    publisher: "Canonical: Ubuntu Manpage Repository"
+    link-citations: true
+    title: "UBUNTU Manuals:  CoDel - Controlled-Delay Active Queue Management algorithm"
+    published:
+      year: 2019
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://manpages.ubuntu.com/manpages/bionic/man8/tc-codel.8.html
+
+  - id: linux1
+    type: article-journal
+    publisher: linux.org
+    link-citations: true
+    title: "Linux.org: CoDel - Fair Queuing (FQ) with Controlled Delay (CoDel)"
+    published:
+      year: 2012
+      month: 6
+      day: 4
+      accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.linux.org/docs/man8/tc-fq_codel.html
+
+  - id: eero2
+    type: website
+    publisher: eero Labs, An Amazon Company
+    link-citations: true
+    title: "eero.com: What is eero labs"
+    published:
+      year: 2020
+      month: 10
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://support.eero.com/hc/en-us/articles/360000709886-What-is-eero-Labs-
+
+  - id: cablelabs1
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: ACTIVE QUEUE MANAGEMENT; ALGORITHMS FOR DOCSIS 3.0, A Simulation Study of CoDel, SFQ-CoDel and PIE in DOCSIS 3.0 Networks"
+    published:
+      year: 2020
+      month: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: https://www.cablelabs.com/wp-content/uploads/2014/05/Active_Queue_Management_Algorithms_DOCSIS_3_0.pdf
+
+  - id: cablelabs2
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: Network Technologies; ACTIVE QUEUE MANAGEMENT IN DOCSIS 3.X CABLE MODEMS"
+    published:
+      year: 2020
+      month: 5
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www-res.cablelabs.com/wp-content/uploads/2019/02/28094021/DOCSIS-AQM_May2014.pdf
+
+  - id: cablelabs3
+    type: article-journal
+    publisher: CableLabs
+    link-citations: true
+    title: "CableLabs: Low Latency DOCSIS"
+    published:
+      year: 2020
+      month: 6
+      day: 24
+    accessed:
+       year: 2020
+       month: 11
+       day: 29
+    URL: https://www.cablelabs.com/technologies/low-latency-docsis
+
+  - id: cablelabs4
+    type: article-journal
+    link-citations: true
+    title: "CableLabs: Low Latency DOCSIS"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    URL: https://www.cablelabs.com/technologies/low-latency-docsis
+     
+  - id: vz1
+    type: website
+    publisher: Verizon
+    link-citations: true
+    title: "Verizon delivers network reliability during COVID-19 while accelerating 5G deployments"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 6
+       day: 11
+    URL: https://www.verizon.com/about/news/how-americans-are-spending-their-time-temporary-new-normal
+     
+  - id: nokia5
+    type: website
+    publisher: nokia
+    link-citations: true
+    title: "Pandemic Impact on Global Internet Traffic NANOG June 2020"
+    author:
+     - family: Labovitz
+       given: Craig
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 6
+    URL: https://storage.googleapis.com/site-media-prod/meetings/NANOG79/2208/20200601_Labovitz_Effects_Of_Covid-19_v1.pdf
+    
+  - id: PayPal1
+    type: website
+    publisher: "PayPal Holdings, Inc."
+    title: "PayPal Reports Third Quarter 2020 Results"
+    accessed:
+       year: 2020
+       month: 11
+       day: 04
+    issued:
+       year: 2020
+       month: 11
+       day: 2
+    URL: https://investor.pypl.com/news-and-events/news-details/2020/PayPal-Reports-Third-Quarter-2020-Results/default.aspx
