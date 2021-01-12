@@ -198,17 +198,25 @@ $if(dir)$
 $endif$
 
 % set default figure placement to htbp
+\title{My Title}
+\author{My Name}
+\date{Jan 12,2021}
+
 \makeatletter
-\def\@maketitle{
-\raggedright
-\includegraphics[width = 40 mm]{images\logo.jpg}\\[8ex]
-\begin{center}
-{\Huge \bfseries \sffamily \@title }\\[4ex]
-{\Large \@author}\\[4ex]
-\@date\\[8ex]
-\includegraphics[width=40mm]{images\image.png}
-\end{center}}
+    \begin{titlepage}
+        \begin{center}
+            \includegraphics[width=0.7\linewidth]{logo.png}\\[4ex]
+            {\huge \bfseries  \@title }\\[2ex] 
+            {\LARGE  \@author}\\[50ex] 
+            {\large \@date}
+        \end{center}
+    \end{titlepage}
 \makeatother
+\thispagestyle{empty}
+\newpage
+
+\thispagestyle{empty}
+\newpage
 
 $for(header-includes)$
 $header-includes$
