@@ -199,7 +199,15 @@ $endif$
 
 % set default figure placement to htbp
 \makeatletter
-\def\fps@figure{htbp}
+\def\@maketitle{
+\raggedright
+\includegraphicd[width = 40 mm]{logo.jpg}\\[8ex]
+\begin{center}
+{\Huge \bfseries \sffamily \@title }\\[4ex]
+{\Large \@author}\\[4ex]
+\@date\\[8ex]
+\includegraphics[width=40mm]{image.png}
+\end{center}}
 \makeatother
 
 $for(header-includes)$
@@ -237,6 +245,7 @@ $endif$
 $if(title)$
 \maketitle
 $endif$
+\newpage
 $if(abstract)$
 \begin{abstract}
 $abstract$
