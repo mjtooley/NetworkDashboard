@@ -201,12 +201,12 @@ $endif$
 \makeatletter
 \def\@maketitle{
 \raggedright
-\includegraphicd[width = 40 mm]{logo.jpg}\\[8ex]
+\includegraphics[width = 40 mm]{images\logo.jpg}\\[8ex]
 \begin{center}
 {\Huge \bfseries \sffamily \@title }\\[4ex]
 {\Large \@author}\\[4ex]
 \@date\\[8ex]
-\includegraphics[width=40mm]{image.png}
+\includegraphics[width=40mm]{images\image.png}
 \end{center}}
 \makeatother
 
